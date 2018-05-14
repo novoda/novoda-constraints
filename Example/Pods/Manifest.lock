@@ -1,0 +1,16 @@
+PODS:
+  - novoda-constraints (0.1.0)
+
+DEPENDENCIES:
+  - novoda-constraints (from `../`)
+
+EXTERNAL SOURCES:
+  novoda-constraints:
+    :path: ../
+
+SPEC CHECKSUMS:
+  novoda-constraints: 17d9bf47564fd0c84fa2894fb8dcf82c1e3d36b1
+
+PODFILE CHECKSUM: 4b86b8804d28e9c84412f7c634f43234afe6ac1b
+
+COCOAPODS: 1.4.0

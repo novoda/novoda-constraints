@@ -1,0 +1,6 @@
+framework module Pods_novoda_constraints_Tests {
+  umbrella header "Pods-novoda-constraints_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

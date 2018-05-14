@@ -1,0 +1,6 @@
+framework module novoda_constraints {
+  umbrella header "novoda-constraints-umbrella.h"
+
+  export *
+  module * { export * }
+}

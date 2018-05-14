@@ -1,0 +1,10 @@
+use_frameworks!
+platform :ios, '9.0'
+
+target 'novoda-constraints_Example' do
+  pod 'novoda-constraints', :path => '../'
+
+  target 'novoda-constraints_Tests' do
+    inherit! :search_paths
+  end
+end
