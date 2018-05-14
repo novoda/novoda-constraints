@@ -1,9 +1,5 @@
 # novoda-constraints
 
-[![CI Status](https://img.shields.io/travis/Giuseppe Basile/novoda-constraints.svg?style=flat)](https://travis-ci.org/Giuseppe Basile/novoda-constraints)
-[![Version](https://img.shields.io/cocoapods/v/novoda-constraints.svg?style=flat)](https://cocoapods.org/pods/novoda-constraints)
-[![License](https://img.shields.io/cocoapods/l/novoda-constraints.svg?style=flat)](https://cocoapods.org/pods/novoda-constraints)
-[![Platform](https://img.shields.io/cocoapods/p/novoda-constraints.svg?style=flat)](https://cocoapods.org/pods/novoda-constraints)
 
 ## Example
 
@@ -22,7 +18,7 @@ pod 'novoda-constraints'
 
 ## Author
 
-Giuseppe Basile, giuseppe@novoda.com
+Novoda iOS Team
 
 ## License
 
