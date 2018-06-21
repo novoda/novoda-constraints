@@ -10,7 +10,7 @@ import UIKit
 public extension UIView {
 
     @available(iOS 9.0, *)
-    public func constrain(toSuperviewSafeArea edges: Edge..., insetBy inset: CGFloat = 0) {
+    public func pinToSuperviewSafeArea(_ edges: Edge..., insetBy inset: CGFloat = 0) {
         prepareForConstraints()
         var edges = edges
         if edges.contains(.leading) {
