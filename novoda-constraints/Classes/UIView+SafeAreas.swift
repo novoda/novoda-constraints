@@ -1,10 +1,3 @@
-//
-//  UIView+SafeAreas.swift
-//  novoda-constraints
-//
-//  Created by Alex Curran on 21/06/2018.
-//
-
 import UIKit
 
 public extension UIView {
