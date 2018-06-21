@@ -38,42 +38,6 @@ public extension UIView {
         }
     }
 
-    @available(iOS 9.0, *)
-    private var leadingSafeAnchor: NSLayoutXAxisAnchor {
-        if #available(iOS 11.0, *) {
-            return safeAreaLayoutGuide.leadingAnchor
-        } else {
-            return leadingAnchor
-        }
-    }
-
-    @available(iOS 9.0, *)
-    private var trailingSafeAnchor: NSLayoutXAxisAnchor {
-        if #available(iOS 11.0, *) {
-            return safeAreaLayoutGuide.trailingAnchor
-        } else {
-            return trailingAnchor
-        }
-    }
-
-    @available(iOS 9.0, *)
-    private var topSafeAnchor: NSLayoutYAxisAnchor {
-        if #available(iOS 11.0, *) {
-            return safeAreaLayoutGuide.topAnchor
-        } else {
-            return topAnchor
-        }
-    }
-
-    @available(iOS 9.0, *)
-    private var bottomSafeAnchor: NSLayoutYAxisAnchor {
-        if #available(iOS 11.0, *) {
-            return safeAreaLayoutGuide.bottomAnchor
-        } else {
-            return bottomAnchor
-        }
-    }
-
     private func offset(for edge: NSLayoutAttribute, ofInset inset: CGFloat) -> CGFloat {
         switch edge {
         case .top, .topMargin, .leading, .leadingMargin:
