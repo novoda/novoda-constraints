@@ -10,8 +10,8 @@ import UIKit
 public extension UIView {
 
     @available(iOS 9.0, *)
-    public func constrain(toSuperviewSafeArea edges: NSLayoutAttribute..., insetBy inset: CGFloat = 0) {
-        _ = prepareForConstraints()
+    public func constrain(toSuperviewSafeArea edges: Edge..., insetBy inset: CGFloat = 0) {
+        prepareForConstraints()
         var edges = edges
         if edges.contains(.leading) {
             leadingAnchor.constraint(equalTo: superview!.leadingSafeAnchor,
@@ -86,21 +86,20 @@ public extension UIView {
         }
     }
 
-
-    private func prepareForConstraints() -> UIView {
-        guard let superview = self.superview else {
+    // This can be used in the other extensions as well
+    private func prepareForConstraints() {
+        guard let _ = self.superview else {
             fatalError("view doesn't have a superview")
         }
         translatesAutoresizingMaskIntoConstraints = false
-        return superview
     }
 
 }
 
-private extension Array where Element == NSLayoutAttribute {
+private extension Array where Element == Edge {
 
-    mutating func remove(_ attribute: NSLayoutAttribute) {
-        if let foundIndex = index(of: attribute) {
+    mutating func remove(_ edge: Edge) {
+        if let foundIndex = index(of: edge) {
             remove(at: foundIndex)
         }
     }
