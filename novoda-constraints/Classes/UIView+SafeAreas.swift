@@ -31,16 +31,12 @@ public extension UIView {
         }
     }
 
-    private func offset(for edge: NSLayoutAttribute, ofInset inset: CGFloat) -> CGFloat {
+    private func offset(for edge: Edge, ofInset inset: CGFloat) -> CGFloat {
         switch edge {
-        case .top, .topMargin, .leading, .leadingMargin:
+        case .top, .leading:
             return inset
-        case .bottom, .bottomMargin, .trailing, .trailingMargin:
+        case .bottom, .trailing:
             return -inset
-        default:
-            print("Warning, offset not handled for edge \(edge)")
-            return inset
-        }
     }
 
     // This can be used in the other extensions as well
