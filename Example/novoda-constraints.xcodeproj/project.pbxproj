@@ -212,7 +212,6 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 6344MVRY42;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -522,7 +521,7 @@
 			baseConfigurationReference = 5812C92541FAF9A57784CD6E /* Pods-novoda-constraints_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6344MVRY42;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "novoda-constraints/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -538,7 +537,7 @@
 			baseConfigurationReference = 3033674C0AFCD23364C82F06 /* Pods-novoda-constraints_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6344MVRY42;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "novoda-constraints/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
