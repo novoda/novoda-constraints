@@ -216,7 +216,6 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 6344MVRY42;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -552,7 +551,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2DFDEE205103E661568F173D /* Pods-novoda-constraints_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 6344MVRY42;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -574,7 +573,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6BD7E219A581B6089FC922BD /* Pods-novoda-constraints_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 6344MVRY42;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
