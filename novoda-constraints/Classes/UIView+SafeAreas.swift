@@ -37,6 +37,7 @@ public extension UIView {
             return inset
         case .bottom, .trailing:
             return -inset
+        }
     }
 
     // This can be used in the other extensions as well
