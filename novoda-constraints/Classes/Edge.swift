@@ -5,21 +5,13 @@ public struct Edge: Equatable {
     public let layoutAttribute: NSLayoutAttribute
     let insetMultiplier: CGFloat
 
-    public static var top: Edge {
-        return Edge(layoutAttribute: .top, insetMultiplier: 1)
-    }
+    public static let top = Edge(layoutAttribute: .top, insetMultiplier: 1)
 
-    public static var bottom: Edge {
-        return Edge(layoutAttribute: .bottom, insetMultiplier: -1)
-    }
+    public static let bottom = Edge(layoutAttribute: .bottom, insetMultiplier: -1)
 
-    public static var leading: Edge {
-        return Edge(layoutAttribute: .leading, insetMultiplier: 1)
-    }
+    public static let leading = Edge(layoutAttribute: .leading, insetMultiplier: 1)
 
-    public static var trailing: Edge {
-        return Edge(layoutAttribute: .trailing, insetMultiplier: -1)
-    }
+    public static let trailing = Edge(layoutAttribute: .trailing, insetMultiplier: -1)
 
     func offset(equivalentToInset inset: CGFloat) -> CGFloat {
         return inset * insetMultiplier
