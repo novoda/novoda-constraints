@@ -1,21 +1,27 @@
 import UIKit
 
-public enum Edge {
-    case top
-    case bottom
-    case leading
-    case trailing
-    
-    func layoutAttribute() -> NSLayoutAttribute {
-        switch self {
-        case .top:
-            return .top
-        case .bottom:
-            return .bottom
-        case .leading:
-            return .leading
-        case .trailing:
-            return .trailing
-        }
+public struct Edge: Equatable {
+
+    public let layoutAttribute: NSLayoutAttribute
+    let insetMultiplier: CGFloat
+
+    public static var top: Edge {
+        return Edge(layoutAttribute: .top, insetMultiplier: 1)
+    }
+
+    public static var bottom: Edge {
+        return Edge(layoutAttribute: .bottom, insetMultiplier: -1)
+    }
+
+    public static var leading: Edge {
+        return Edge(layoutAttribute: .leading, insetMultiplier: 1)
+    }
+
+    public static var trailing: Edge {
+        return Edge(layoutAttribute: .trailing, insetMultiplier: -1)
+    }
+
+    func offset(equivalentToInset inset: CGFloat) -> CGFloat {
+        return inset * insetMultiplier
     }
 }

@@ -32,12 +32,7 @@ public extension UIView {
     }
 
     private func offset(for edge: Edge, ofInset inset: CGFloat) -> CGFloat {
-        switch edge {
-        case .top, .leading:
-            return inset
-        case .bottom, .trailing:
-            return -inset
-        }
+        return edge.offset(equivalentToInset: inset)
     }
 
     // This can be used in the other extensions as well
