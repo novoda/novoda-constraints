@@ -3,7 +3,7 @@ import UIKit
 
 public extension UIView {
     func pinToSuperviewEdges(constant: CGFloat = 0) {
-        pinToSuperview(edges: [.top, .bottom, .leading, .trailing], constant: constant)
+        pinToSuperview(edges: Edge.all, constant: constant)
     }
     
     func pinToSuperview(edges: [Edge], constant: CGFloat = 0, priority: UILayoutPriority = .required) {

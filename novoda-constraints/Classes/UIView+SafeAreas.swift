@@ -1,11 +1,21 @@
 import UIKit
 
 public extension UIView {
-
+    
+    @available(iOS 9.0, *)
+    public func pinToSuperviewSafeArea(_ edges: [Edge], insetBy inset: CGFloat = 0) { // Not ideal but added as Swifts variadic parameters currently do NOT accept arrays
+        for edge in edges {
+            pinToSuperviewSafeArea(edge, insetBy: inset)
+        }
+    }
+    
     @available(iOS 9.0, *)
     public func pinToSuperviewSafeArea(_ edges: Edge..., insetBy inset: CGFloat = 0) {
         prepareForConstraints()
         var edges = edges
+        if edges.isEmpty {
+            edges = Edge.all
+        }
         if edges.contains(.leading) {
             leadingAnchor.constraint(equalTo: superview!.leadingSafeAnchor,
                                      constant: Edge.leading.offset(equivalentToInset: inset)).isActive = true
