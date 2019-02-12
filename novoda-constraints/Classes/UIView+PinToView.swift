@@ -72,10 +72,10 @@ extension UIView {
         }
         
         let constraint = NSLayoutConstraint(item: self,
-                                            attribute: edge.layoutAttribute(),
+                                            attribute: edge.layoutAttribute,
                                             relatedBy: relation,
                                             toItem: view,
-                                            attribute: otherEdge.layoutAttribute(),
+                                            attribute: otherEdge.layoutAttribute,
                                             multiplier: 1,
                                             constant: constant)
         constraint.priority = priority
