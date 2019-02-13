@@ -3,20 +3,20 @@ import UIKit
 
 public extension UIView {
     
-    func pinToSuperview(edges: [Edge] = Edge.all, constant: CGFloat = 0, priority: UILayoutPriority = .required) {
+    func pinToSuperview(edges: [Edge] = Edge.all, inset: CGFloat = 0, priority: UILayoutPriority = .required) {
         for edge in edges {
-            pinToSuperview(edge, constant: constant, priority: priority)
+            pinToSuperview(edge, inset: inset, priority: priority)
         }
     }
     
-    func pinToSuperview(edges: Edge..., constant: CGFloat = 0, priority: UILayoutPriority = .required) {
+    func pinToSuperview(edges: Edge..., inset: CGFloat = 0, priority: UILayoutPriority = .required) {
         for edge in edges {
-            pinToSuperview(edge, constant: constant, priority: priority)
+            pinToSuperview(edge, inset: inset, priority: priority)
         }
     }
     
     @discardableResult func pinToSuperview(_ edge: Edge,
-                                                   constant: CGFloat = 0,
+                                                   inset: CGFloat = 0,
                                                    priority: UILayoutPriority = .required,
                                                    relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
         
@@ -32,7 +32,7 @@ public extension UIView {
                                             toItem: superview,
                                             attribute: edge.layoutAttribute,
                                             multiplier: 1,
-                                            constant: constant)
+                                            constant: edge.offset(equivalentToInset: inset))
         constraint.priority = priority
         superview.addConstraint(constraint)
         return constraint
