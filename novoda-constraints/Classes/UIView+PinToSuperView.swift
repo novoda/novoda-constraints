@@ -24,17 +24,6 @@ public extension UIView {
             preconditionFailure("view has no superview")
         }
         
-        translatesAutoresizingMaskIntoConstraints = false
-        
-        let constraint = NSLayoutConstraint(item: self,
-                                            attribute: edge.layoutAttribute,
-                                            relatedBy: relation,
-                                            toItem: superview,
-                                            attribute: edge.layoutAttribute,
-                                            multiplier: 1,
-                                            constant: edge.offset(equivalentToInset: inset))
-        constraint.priority = priority
-        superview.addConstraint(constraint)
-        return constraint
+        return pin(edge, to: edge, of: superview, constant: inset, priority: priority, relatedBy: relation)
     }
 }

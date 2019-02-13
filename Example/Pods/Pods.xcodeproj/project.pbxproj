@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09816DEB2A8A30E0E21762145A233C77 /* Pods-novoda-constraints_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC47B97AF2610B1E08CA18FB7DC83256 /* Pods-novoda-constraints_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12D805C6821C691A53DED2466392BDCC /* UIView+PinToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9ED906081CB6C911C732739FD0BA41 /* UIView+PinToView.swift */; };
+		12D805C6821C691A53DED2466392BDCC /* UIView+AlignToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9ED906081CB6C911C732739FD0BA41 /* UIView+AlignToView.swift */; };
 		187AC34537F4A1E62734D646558C1447 /* Pods-novoda-constraints_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDE5CF9AC2CDC9A004802423263A3B /* Pods-novoda-constraints_Example-dummy.m */; };
 		201BF69CF7CFF320CAB41BD72A3F907E /* UIView+Sizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD35BA2488A8763B1FE4219A9FF0B3 /* UIView+Sizing.swift */; };
 		467B8DD5130D7BBCA2A158A7ABAFCA51 /* UIView+PinToViewCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18F65F4DA840AA2347C728064FC5186 /* UIView+PinToViewCenter.swift */; };
@@ -46,7 +46,7 @@
 		2FBA941EFDA3CF29FFF387816E3D0F0E /* novoda-constraints.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "novoda-constraints.xcconfig"; sourceTree = "<group>"; };
 		340EE12739A57A02664D6924BE7DD8B0 /* Pods-novoda-constraints_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-novoda-constraints_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3D02F52276E3A2B8578E37BB4954E11F /* Pods-novoda-constraints_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-novoda-constraints_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3D9ED906081CB6C911C732739FD0BA41 /* UIView+PinToView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinToView.swift"; path = "novoda-constraints/Classes/UIView+PinToView.swift"; sourceTree = "<group>"; };
+		3D9ED906081CB6C911C732739FD0BA41 /* UIView+AlignToView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AlignToView.swift"; path = "novoda-constraints/Classes/UIView+AlignToView.swift"; sourceTree = "<group>"; };
 		440E691A3816009FE7F25B9C5DF0E157 /* Pods-novoda-constraints_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-novoda-constraints_Tests-dummy.m"; sourceTree = "<group>"; };
 		46A1784A19FA07CCB5640D9EF70E32D8 /* novoda_constraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = novoda_constraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		481A5C48C410926FC3BAE13EF29AA48C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,8 +125,8 @@
 				F45361052214439200230820 /* Support.swift */,
 				86DE400C20DBE1D500A6746B /* UIView+Anchors.swift */,
 				5E859F8AAC4BCDBFFDF6F18FE46D749E /* UIView+PinToSuperView.swift */,
-				3D9ED906081CB6C911C732739FD0BA41 /* UIView+PinToView.swift */,
 				F18F65F4DA840AA2347C728064FC5186 /* UIView+PinToViewCenter.swift */,
+				3D9ED906081CB6C911C732739FD0BA41 /* UIView+AlignToView.swift */,
 				86DE400A20DBDCB000A6746B /* UIView+SafeAreas.swift */,
 				AADD35BA2488A8763B1FE4219A9FF0B3 /* UIView+Sizing.swift */,
 				85BAF977F9D23790196AA68E57459D8D /* Pod */,
@@ -369,7 +369,7 @@
 				86DE400B20DBDCB000A6746B /* UIView+SafeAreas.swift in Sources */,
 				975A419C912705B077D77A370665A260 /* novoda-constraints-dummy.m in Sources */,
 				6486E0E247000B5DECBB6D105C59BE3D /* UIView+PinToSuperView.swift in Sources */,
-				12D805C6821C691A53DED2466392BDCC /* UIView+PinToView.swift in Sources */,
+				12D805C6821C691A53DED2466392BDCC /* UIView+AlignToView.swift in Sources */,
 				467B8DD5130D7BBCA2A158A7ABAFCA51 /* UIView+PinToViewCenter.swift in Sources */,
 				201BF69CF7CFF320CAB41BD72A3F907E /* UIView+Sizing.swift in Sources */,
 				F45361062214439200230820 /* Support.swift in Sources */,
