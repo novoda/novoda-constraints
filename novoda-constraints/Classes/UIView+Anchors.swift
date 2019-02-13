@@ -1,8 +1,8 @@
 import Foundation
 
+@available(iOS 9.0, *)
 extension UIView {
 
-    @available(iOS 9.0, *)
     var leadingSafeAnchor: NSLayoutXAxisAnchor {
         if #available(iOS 11.0, *) {
             return safeAreaLayoutGuide.leadingAnchor
@@ -11,7 +11,6 @@ extension UIView {
         }
     }
 
-    @available(iOS 9.0, *)
     var trailingSafeAnchor: NSLayoutXAxisAnchor {
         if #available(iOS 11.0, *) {
             return safeAreaLayoutGuide.trailingAnchor
@@ -20,7 +19,6 @@ extension UIView {
         }
     }
 
-    @available(iOS 9.0, *)
     var topSafeAnchor: NSLayoutYAxisAnchor {
         if #available(iOS 11.0, *) {
             return safeAreaLayoutGuide.topAnchor
@@ -29,7 +27,6 @@ extension UIView {
         }
     }
 
-    @available(iOS 9.0, *)
     var bottomSafeAnchor: NSLayoutYAxisAnchor {
         if #available(iOS 11.0, *) {
             return safeAreaLayoutGuide.bottomAnchor
