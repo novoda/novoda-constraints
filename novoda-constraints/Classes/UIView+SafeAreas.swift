@@ -2,19 +2,23 @@ import UIKit
 
 @available(iOS 9.0, *)
 public extension UIView {
-    func pinToSuperviewSafeArea(_ edges: [Edge] = Edge.all, insetBy inset: CGFloat = 0) { // Not ideal but added as Swifts variadic parameters currently do NOT accept arrays
-        for edge in edges {
-            pinToSuperviewSafeArea(edge, insetBy: inset)
-        }
-    }
     
-    func pinToSuperviewSafeArea(_ edges: Edge..., insetBy inset: CGFloat = 0) {
+    func pinToSuperviewSafeArea(_ edges: Edge...,
+                                insetBy inset: CGFloat = 0) {
+        
+        var edges = edges
+        
+        if edges.isEmpty {
+            edges = Edge.all
+        }
+        
         for edge in edges {
             pinToSuperviewSafeArea(edge: edge)
         }
     }
     
-    @discardableResult func pinToSuperviewSafeArea(edge: Edge, insetBy inset: CGFloat = 0) -> NSLayoutConstraint {
+    @discardableResult func pinToSuperviewSafeArea(edge: Edge,
+                                                   insetBy inset: CGFloat = 0) -> NSLayoutConstraint {
         prepareForConstraints()
         var anchor: NSLayoutConstraint
         switch edge {
