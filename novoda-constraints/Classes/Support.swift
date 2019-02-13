@@ -8,6 +8,7 @@
 import UIKit
 
 public extension UIView {
+    
     internal func prepareForConstraints() {
         guard let _ = self.superview else {
             fatalError("view doesn't have a superview")
@@ -23,8 +24,8 @@ public extension UIView {
                                          priority: UILayoutPriority = .required,
                                          relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
         
-        translatesAutoresizingMaskIntoConstraints = false
-        view.translatesAutoresizingMaskIntoConstraints = false
+        prepareForConstraints()
+        view.prepareForConstraints()
         
         let constraint = NSLayoutConstraint(item: self,
                                             attribute: edge,
@@ -46,14 +47,12 @@ public extension UIView {
                                        priority: UILayoutPriority = .required,
                                        relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
         
-        return pin(edge.layoutAttribute, to: otherEdge.layoutAttribute, of: view, constant: constant, multiplier: multiplier, priority: priority, relatedBy: relation)
-    }
-}
-
-internal extension Array where Element == Edge {
-    mutating func remove(_ edge: Edge) {
-        if let foundIndex = index(of: edge) {
-            remove(at: foundIndex)
-        }
+        return pin(edge.layoutAttribute,
+                   to: otherEdge.layoutAttribute,
+                   of: view,
+                   constant: constant,
+                   multiplier: multiplier,
+                   priority: priority,
+                   relatedBy: relation)
     }
 }
