@@ -1,46 +1,43 @@
 import UIKit
 
+@available(iOS 9.0, *)
 public extension UIView {
-    
-    @available(iOS 9.0, *)
-    public func pinToSuperviewSafeArea(_ edges: [Edge], insetBy inset: CGFloat = 0) { // Not ideal but added as Swifts variadic parameters currently do NOT accept arrays
+    func pinToSuperviewSafeArea(_ edges: [Edge] = Edge.all, insetBy inset: CGFloat = 0) { // Not ideal but added as Swifts variadic parameters currently do NOT accept arrays
         for edge in edges {
             pinToSuperviewSafeArea(edge, insetBy: inset)
         }
     }
     
-    @available(iOS 9.0, *)
-    public func pinToSuperviewSafeArea(_ edges: Edge..., insetBy inset: CGFloat = 0) {
-        prepareForConstraints()
-        var edges = edges
-        if edges.isEmpty {
-            edges = Edge.all
-        }
-        if edges.contains(.leading) {
-            leadingAnchor.constraint(equalTo: superview!.leadingSafeAnchor,
-                                     constant: Edge.leading.offset(equivalentToInset: inset)).isActive = true
-            edges.remove(.leading)
-        }
-        if edges.contains(.trailing) {
-            trailingAnchor.constraint(equalTo: superview!.trailingSafeAnchor,
-                                      constant: Edge.trailing.offset(equivalentToInset: inset)).isActive = true
-            edges.remove(.trailing)
-        }
-        if edges.contains(.top) {
-            topAnchor.constraint(equalTo: superview!.topSafeAnchor,
-                                 constant: Edge.top.offset(equivalentToInset: inset)).isActive = true
-            edges.remove(.top)
-        }
-        if edges.contains(.bottom) {
-            bottomAnchor.constraint(equalTo: superview!.bottomSafeAnchor,
-                                    constant: Edge.bottom.offset(equivalentToInset: inset)).isActive = true
-            edges.remove(.bottom)
-        }
-        if edges.isEmpty == false {
-            debugPrint("Constraining to superview safe area was left with the following unconstrained attributes: \(edges)")
+    func pinToSuperviewSafeArea(_ edges: Edge..., insetBy inset: CGFloat = 0) {
+        for edge in edges {
+            pinToSuperviewSafeArea(edge: edge)
         }
     }
-
+    
+    @discardableResult func pinToSuperviewSafeArea(edge: Edge, insetBy inset: CGFloat = 0) -> NSLayoutConstraint {
+        prepareForConstraints()
+        var anchor: NSLayoutConstraint
+        switch edge {
+        case .leading:
+            anchor = leadingAnchor.constraint(equalTo: superview!.leadingSafeAnchor,
+                                     constant: Edge.leading.offset(equivalentToInset: inset))
+        case .trailing:
+            anchor = trailingAnchor.constraint(equalTo: superview!.trailingSafeAnchor,
+                                      constant: Edge.trailing.offset(equivalentToInset: inset))
+        case .top:
+            anchor = topAnchor.constraint(equalTo: superview!.topSafeAnchor,
+                                 constant: Edge.top.offset(equivalentToInset: inset))
+        case .bottom:
+            anchor = bottomAnchor.constraint(equalTo: superview!.bottomSafeAnchor,
+                                    constant: Edge.bottom.offset(equivalentToInset: inset))
+        default:
+            preconditionFailure("Unknown Edge type when pinning to superview safe area")
+        }
+        
+        anchor.isActive = true
+        return anchor
+    }
+    
     // This can be used in the other extensions as well
     private func prepareForConstraints() {
         guard let _ = self.superview else {

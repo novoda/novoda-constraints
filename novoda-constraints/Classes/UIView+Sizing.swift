@@ -1,12 +1,11 @@
 import UIKit
 
-extension UIView {
-    @discardableResult public func setWidthConstraint(
-        equalTo view: UIView? = nil,
-        constant: CGFloat = 0,
-        multiplier: CGFloat = 1,
-        priority: UILayoutPriority = .required,
-        relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+public extension UIView {
+    @discardableResult func setWidthConstraint(equalTo view: UIView? = nil,
+                                               constant: CGFloat = 0,
+                                               multiplier: CGFloat = 1,
+                                               priority: UILayoutPriority = .required,
+                                               relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
         
         translatesAutoresizingMaskIntoConstraints = false
         
@@ -22,13 +21,12 @@ extension UIView {
         return constraint
     }
     
-    @discardableResult public func setHeightConstraint(
-        equalTo view: UIView? = nil,
-        attribute: NSLayoutAttribute = .height,
-        constant: CGFloat = 0,
-        multiplier: CGFloat = 1,
-        priority: UILayoutPriority = .required,
-        relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+    @discardableResult func setHeightConstraint(equalTo view: UIView? = nil,
+                                                attribute: NSLayoutAttribute = .height,
+                                                constant: CGFloat = 0,
+                                                multiplier: CGFloat = 1,
+                                                priority: UILayoutPriority = .required,
+                                                relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
         
         translatesAutoresizingMaskIntoConstraints = false
         
@@ -44,11 +42,11 @@ extension UIView {
         return constraint
     }
     
-    public func setSizeConstraint(size: CGSize,
-                                  equalTo view: UIView? = nil,
-                                  constant: CGFloat = 0,
-                                  priority: UILayoutPriority = .required,
-                                  relatedBy relation: NSLayoutRelation = .equal) {
+    func setSizeConstraint(size: CGSize,
+                           equalTo view: UIView? = nil,
+                           constant: CGFloat = 0,
+                           priority: UILayoutPriority = .required,
+                           relatedBy relation: NSLayoutRelation = .equal) {
         setWidthConstraint(equalTo: view, constant: size.width, priority: priority, relatedBy: relation)
         setHeightConstraint(equalTo: view, constant: size.height, priority: priority, relatedBy: relation)
     }
