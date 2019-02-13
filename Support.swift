@@ -24,6 +24,7 @@ public extension UIView {
                                          relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
         
         translatesAutoresizingMaskIntoConstraints = false
+        view.translatesAutoresizingMaskIntoConstraints = false
         
         let constraint = NSLayoutConstraint(item: self,
                                             attribute: edge,
