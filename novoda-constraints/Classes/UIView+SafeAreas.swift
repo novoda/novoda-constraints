@@ -37,21 +37,4 @@ public extension UIView {
         anchor.isActive = true
         return anchor
     }
-    
-    // This can be used in the other extensions as well
-    private func prepareForConstraints() {
-        guard let _ = self.superview else {
-            fatalError("view doesn't have a superview")
-        }
-        translatesAutoresizingMaskIntoConstraints = false
-    }
-}
-
-private extension Array where Element == Edge {
-
-    mutating func remove(_ edge: Edge) {
-        if let foundIndex = index(of: edge) {
-            remove(at: foundIndex)
-        }
-    }
 }
