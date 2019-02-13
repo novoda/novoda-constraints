@@ -20,16 +20,16 @@ public extension UIView {
         switch edge {
         case .leading:
             anchor = leadingAnchor.constraint(equalTo: superview!.leadingSafeAnchor,
-                                     constant: Edge.leading.offset(equivalentToInset: inset))
+                                              constant: Edge.leading.offset(equivalentToInset: inset))
         case .trailing:
             anchor = trailingAnchor.constraint(equalTo: superview!.trailingSafeAnchor,
-                                      constant: Edge.trailing.offset(equivalentToInset: inset))
+                                               constant: Edge.trailing.offset(equivalentToInset: inset))
         case .top:
             anchor = topAnchor.constraint(equalTo: superview!.topSafeAnchor,
-                                 constant: Edge.top.offset(equivalentToInset: inset))
+                                          constant: Edge.top.offset(equivalentToInset: inset))
         case .bottom:
             anchor = bottomAnchor.constraint(equalTo: superview!.bottomSafeAnchor,
-                                    constant: Edge.bottom.offset(equivalentToInset: inset))
+                                             constant: Edge.bottom.offset(equivalentToInset: inset))
         default:
             preconditionFailure("Unknown Edge type when pinning to superview safe area")
         }
