@@ -1,35 +1,35 @@
 import UIKit
 
-extension UIView {
-    @discardableResult public func pinTop(to view: UIView,
+public extension UIView {
+    @discardableResult func pinTop(to view: UIView,
                                           constant: CGFloat = 0,
                                           priority: UILayoutPriority = .required,
                                           relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
         return pin(edge: .top, to: .top, of: view, constant: constant, priority: priority, relatedBy: relation)
     }
     
-    @discardableResult public func pinBottom(to view: UIView,
+    @discardableResult func pinBottom(to view: UIView,
                                              constant: CGFloat = 0,
                                              priority: UILayoutPriority = .required,
                                              relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
         return pin(edge: .bottom, to: .bottom, of: view, constant: constant, priority: priority, relatedBy: relation)
     }
     
-    @discardableResult public func pinLeading(to view: UIView,
+    @discardableResult func pinLeading(to view: UIView,
                                               constant: CGFloat = 0,
                                               priority: UILayoutPriority = .required,
                                               relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
         return pin(edge: .leading, to: .leading, of: view, constant: constant, priority: priority, relatedBy: relation)
     }
     
-    @discardableResult public func pinTrailing(to view: UIView,
+    @discardableResult func pinTrailing(to view: UIView,
                                                constant: CGFloat = 0,
                                                priority: UILayoutPriority = .required,
                                                relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
         return pin(edge: .trailing, to: .trailing, of: view, constant: constant, priority: priority, relatedBy: relation)
     }
     
-    @discardableResult public func pinView(to view: UIView,
+    @discardableResult func pinView(to view: UIView,
                                            constant: CGFloat = 0,
                                            priority: UILayoutPriority = .required,
                                            edge: NSLayoutAttribute,
@@ -56,7 +56,7 @@ extension UIView {
         return constraint
     }
     
-    @discardableResult public func pin(edge: Edge,
+    @discardableResult func pin(edge: Edge,
                                        to otherEdge: Edge,
                                        of view: UIView,
                                        constant: CGFloat = 0,
