@@ -34,13 +34,7 @@ public extension UIView {
             preconditionFailure("view has no superview")
         }
         
-        var anchor: NSLayoutConstraint /*(item: self,
-                                        attribute: edge.layoutAttribute,
-                                        relatedBy: .equal,
-                                        toItem: superview,
-                                        attribute: edge.layoutAttribute,
-                                        multiplier: 1,
-                                        constant: 0)*/
+        var anchor: NSLayoutConstraint
         
         switch edge {
         case .leading:
