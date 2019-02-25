@@ -1,52 +1,63 @@
 import UIKit
 
 public extension UIView {
-    @discardableResult func setWidthConstraint(equalTo view: UIView? = nil,
-                                               constant: CGFloat = 0,
-                                               multiplier: CGFloat = 1,
-                                               priority: UILayoutPriority = .required,
-                                               relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+    
+    @discardableResult func set(height constant: CGFloat) -> NSLayoutConstraint {
+        return pin(.height, constant: constant)
+    }
+    
+    @discardableResult func set(width constant: CGFloat) -> NSLayoutConstraint {
+        return pin(.width, constant: constant)
+    }
+    
+    @discardableResult func set(widthEqualTo view: UIView,
+                                constant: CGFloat = 0,
+                                multiplier: CGFloat = 1,
+                                priority: UILayoutPriority = .required,
+                                relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+        
         return pin(.width,
                    to: .width,
-                   of: view ?? self,
+                   of: view,
                    constant: constant,
                    multiplier: multiplier,
                    priority: priority,
                    relatedBy: relation)
     }
     
-    @discardableResult func setHeightConstraint(equalTo view: UIView? = nil,
-                                                attribute: NSLayoutAttribute = .height,
-                                                constant: CGFloat = 0,
-                                                multiplier: CGFloat = 1,
-                                                priority: UILayoutPriority = .required,
-                                                relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+    @discardableResult func set(heightEqualTo view: UIView,
+                                attribute: NSLayoutAttribute = .height,
+                                constant: CGFloat = 0,
+                                multiplier: CGFloat = 1,
+                                priority: UILayoutPriority = .required,
+                                relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
         return pin(.height,
                    to: .height,
-                   of: view ?? self,
+                   of: view,
                    constant: constant,
                    multiplier: multiplier,
                    priority: priority,
                    relatedBy: relation)
     }
     
-    func setSizeConstraint(size: CGSize,
-                           equalTo view: UIView? = nil,
-                           constant: CGFloat = 0,
-                           multiplier: CGFloat = 1,
-                           priority: UILayoutPriority = .required,
-                           relatedBy relation: NSLayoutRelation = .equal) {
+    func set(size: CGSize) {
+        pin(.height, constant: size.height)
+        pin(.width, constant: size.width)
+    }
+    
+    func set(sizeEqualTo view: UIView,
+             multiplier: CGFloat = 1,
+             priority: UILayoutPriority = .required,
+             relatedBy relation: NSLayoutRelation = .equal) {
         
-        setWidthConstraint(equalTo: view,
-                           constant: size.width,
-                           multiplier: multiplier,
-                           priority: priority,
-                           relatedBy: relation)
+        set(widthEqualTo: view,
+            multiplier: multiplier,
+            priority: priority,
+            relatedBy: relation)
         
-        setHeightConstraint(equalTo: view,
-                            constant: size.height,
-                            multiplier: multiplier,
-                            priority: priority,
-                            relatedBy: relation)
+        set(heightEqualTo: view,
+            multiplier: multiplier,
+            priority: priority,
+            relatedBy: relation)
     }
 }

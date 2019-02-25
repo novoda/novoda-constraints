@@ -3,9 +3,23 @@ import UIKit
 
 public extension UIView {
     
-    func pinToSuperview(_ edges: Edge...,
+    func pin(toSuperview edges: [Edge],
+        insetBy inset: CGFloat = 0,
+        priority: UILayoutPriority = .required,
+        relatedBy relation: NSLayoutRelation = .equal) {
+        
+        for edge in edges {
+            pin(toSuperview: edge,
+                insetBy: inset,
+                priority: priority,
+                relatedBy: relation)
+        }
+    }
+    
+    func pin(toSuperview edges: Edge...,
                         insetBy inset: CGFloat = 0,
-                        priority: UILayoutPriority = .required) {
+                        priority: UILayoutPriority = .required,
+                        relatedBy relation: NSLayoutRelation = .equal) {
         
         var edges = edges
         
@@ -14,13 +28,14 @@ public extension UIView {
         }
         
         for edge in edges {
-            pinToSuperview(edge: edge,
-                           insetBy: inset,
-                           priority: priority)
+            pin(toSuperview: edge,
+                insetBy: inset,
+                priority: priority,
+                relatedBy: relation)
         }
     }
     
-    @discardableResult private func pinToSuperview(edge: Edge,
+    @discardableResult private func pin(toSuperview edge: Edge,
                                                    insetBy inset: CGFloat = 0,
                                                    priority: UILayoutPriority = .required,
                                                    relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {

@@ -17,15 +17,15 @@ public extension UIView {
     }
     
     @discardableResult internal func pin(_ edge: NSLayoutAttribute,
-                                         to otherEdge: NSLayoutAttribute,
-                                         of view: UIView,
+                                         to otherEdge: NSLayoutAttribute = .notAnAttribute,
+                                         of view: UIView? = nil,
                                          constant: CGFloat = 0,
                                          multiplier: CGFloat = 1,
                                          priority: UILayoutPriority = .required,
                                          relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
         
         prepareForConstraints()
-        view.prepareForConstraints()
+        view?.prepareForConstraints()
         
         let constraint = NSLayoutConstraint(item: self,
                                             attribute: edge,
@@ -35,7 +35,13 @@ public extension UIView {
                                             multiplier: multiplier,
                                             constant: constant)
         constraint.priority = priority
-        view.addConstraint(constraint)
+        
+        if let view = view {
+            view.addConstraint(constraint)
+        } else {
+            addConstraint(constraint)
+        }
+        
         return constraint
     }
     

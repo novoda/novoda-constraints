@@ -9,12 +9,22 @@ class ViewController: UIViewController {
         let piBox = UIView()
         view.addSubview(piBox)
         
-        piBox.backgroundColor = .red
-        piBox.setWidthConstraint(constant: 100)
-        piBox.setHeightConstraint(equalTo: piBox,
-                                  attribute: .width,
-                                  multiplier: CGFloat.pi)
-        piBox.pinCenter(to: view)
+        let poBox = UIView()
+        view.addSubview(poBox)
+        
+        // Example usage:
+        
+        poBox.align(.top, to: piBox)
+        poBox.align(.top, to: .bottom, of: piBox)
+        poBox.pin(toSuperview: .top, .bottom, insetBy: 8)
+        poBox.pin(toSuperview: .top)
+        poBox.pin(toSuperview: Edge.all)
+        poBox.pin(toSuperviewSafeArea: Edge.all)
+        poBox.pin(toSuperviewSafeArea: .top, .bottom, insetBy: 8)
+        poBox.pin(toSuperviewSafeArea: .top)
+        poBox.set(height: 50)
+        poBox.set(width: 50)
+        poBox.set(widthEqualTo: piBox)
+        poBox.set(sizeEqualTo: piBox)
     }
 }
-

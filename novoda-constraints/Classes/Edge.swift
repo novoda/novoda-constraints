@@ -4,7 +4,7 @@ public struct Edge: Equatable {
 
     public let layoutAttribute: NSLayoutAttribute
     let insetMultiplier: CGFloat
-
+    
     public static let top = Edge(layoutAttribute: .top, insetMultiplier: 1)
 
     public static let bottom = Edge(layoutAttribute: .bottom, insetMultiplier: -1)
