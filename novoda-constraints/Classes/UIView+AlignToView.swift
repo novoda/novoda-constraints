@@ -2,7 +2,7 @@ import UIKit
 
 public extension UIView {
     @discardableResult func align(_ edge: Edge,
-                                  with view: UIView,
+                                  to view: UIView,
                                   constant: CGFloat = 0,
                                   priority: UILayoutPriority = .required,
                                   relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
@@ -14,7 +14,7 @@ public extension UIView {
                    relatedBy: relation)
     }
     
-    @discardableResult private func align(_ edge: Edge,
+    @discardableResult func align(_ edge: Edge,
                                   to otherEdge: Edge,
                                   of view: UIView,
                                   constant: CGFloat = 0,
