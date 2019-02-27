@@ -2,10 +2,10 @@ import UIKit
 
 public extension UIView {
     @discardableResult func align(_ edge: Edge,
-                                  to view: UIView,
+                                  with view: UIView,
                                   constant: CGFloat = 0,
                                   priority: UILayoutPriority = .required,
-                                  relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+                                  relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         return pin(edge,
                    to: edge,
                    of: view,
@@ -14,12 +14,12 @@ public extension UIView {
                    relatedBy: relation)
     }
     
-    @discardableResult func align(_ edge: Edge,
+    @discardableResult private func align(_ edge: Edge,
                                   to otherEdge: Edge,
                                   of view: UIView,
                                   constant: CGFloat = 0,
                                   priority: UILayoutPriority = .required,
-                                  relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+                                  relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         return pin(edge,
                    to: otherEdge,
                    of: view,
