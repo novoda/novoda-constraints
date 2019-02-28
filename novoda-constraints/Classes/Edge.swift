@@ -2,7 +2,7 @@ import UIKit
 
 public struct Edge: Equatable {
 
-    public let layoutAttribute: NSLayoutAttribute
+    public let layoutAttribute: NSLayoutConstraint.Attribute
     let insetMultiplier: CGFloat
     
     public static let top = Edge(layoutAttribute: .top, insetMultiplier: 1)
