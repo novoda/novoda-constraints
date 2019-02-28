@@ -9,13 +9,13 @@ public extension UIView {
         translatesAutoresizingMaskIntoConstraints = false
     }
     
-    @discardableResult internal func pin(_ edge: NSLayoutAttribute,
-                                         to otherEdge: NSLayoutAttribute = .notAnAttribute,
+    @discardableResult internal func pin(_ edge: NSLayoutConstraint.Attribute,
+                                         to otherEdge: NSLayoutConstraint.Attribute = .notAnAttribute,
                                          of view: UIView? = nil,
                                          constant: CGFloat = 0,
                                          multiplier: CGFloat = 1,
                                          priority: UILayoutPriority = .required,
-                                         relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+                                         relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         
         prepareForConstraints()
         view?.translatesAutoresizingMaskIntoConstraints = false
@@ -44,7 +44,7 @@ public extension UIView {
                                        constant: CGFloat = 0,
                                        multiplier: CGFloat = 1,
                                        priority: UILayoutPriority = .required,
-                                       relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+                                       relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         
         return pin(edge.layoutAttribute,
                    to: otherEdge.layoutAttribute,

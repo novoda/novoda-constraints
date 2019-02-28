@@ -11,11 +11,11 @@ public extension UIView {
     }
     
     @discardableResult func set(widthEqualTo view: UIView,
-                                attribute: NSLayoutAttribute = .width,
+                                attribute: NSLayoutConstraint.Attribute = .width,
                                 constant: CGFloat = 0,
                                 multiplier: CGFloat = 1,
                                 priority: UILayoutPriority = .required,
-                                relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+                                relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         
         return pin(.width,
                    to: attribute,
@@ -27,11 +27,11 @@ public extension UIView {
     }
     
     @discardableResult func set(heightEqualTo view: UIView,
-                                attribute: NSLayoutAttribute = .height,
+                                attribute: NSLayoutConstraint.Attribute = .height,
                                 constant: CGFloat = 0,
                                 multiplier: CGFloat = 1,
                                 priority: UILayoutPriority = .required,
-                                relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+                                relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         return pin(.height,
                    to: attribute,
                    of: view,
@@ -49,7 +49,7 @@ public extension UIView {
     func set(sizeEqualTo view: UIView,
              multiplier: CGFloat = 1,
              priority: UILayoutPriority = .required,
-             relatedBy relation: NSLayoutRelation = .equal) {
+             relatedBy relation: NSLayoutConstraint.Relation = .equal) {
         
         set(widthEqualTo: view,
             multiplier: multiplier,

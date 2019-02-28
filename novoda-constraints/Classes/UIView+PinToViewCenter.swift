@@ -4,7 +4,7 @@ public extension UIView {
     @discardableResult func pin(centerXTo view: UIView,
                                        constant: CGFloat = 0,
                                        priority: UILayoutPriority = .required,
-                                       relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+                                       relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         return pin(.centerX,
                    to: .centerX,
                    of: view,
@@ -17,7 +17,7 @@ public extension UIView {
                                        constant: CGFloat = 0,
                                        priority: UILayoutPriority = .required,
                                        multiplier: CGFloat = 1,
-                                       relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+                                       relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         return pin(.centerY,
                    to: .centerY,
                    of: view,
@@ -29,7 +29,7 @@ public extension UIView {
     func pin(centerTo view: UIView,
                    constant: CGFloat = 0,
                    priority: UILayoutPriority = .required,
-                   relatedBy relation: NSLayoutRelation = .equal) {
+                   relatedBy relation: NSLayoutConstraint.Relation = .equal) {
         
         pin(centerXTo: view,
             constant: constant,

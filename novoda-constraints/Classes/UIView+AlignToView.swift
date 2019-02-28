@@ -5,7 +5,7 @@ public extension UIView {
                                   to view: UIView,
                                   constant: CGFloat = 0,
                                   priority: UILayoutPriority = .required,
-                                  relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+                                  relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         return pin(edge,
                    to: edge,
                    of: view,
@@ -19,7 +19,7 @@ public extension UIView {
                                   of view: UIView,
                                   constant: CGFloat = 0,
                                   priority: UILayoutPriority = .required,
-                                  relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+                                  relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         return pin(edge,
                    to: otherEdge,
                    of: view,

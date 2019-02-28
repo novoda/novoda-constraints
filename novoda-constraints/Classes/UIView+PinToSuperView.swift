@@ -5,7 +5,7 @@ public extension UIView {
     func pin(toSuperview edges: [Edge],
              insetBy inset: CGFloat = 0,
              priority: UILayoutPriority = .required,
-             relatedBy relation: NSLayoutRelation = .equal) {
+             relatedBy relation: NSLayoutConstraint.Relation = .equal) {
         
         for edge in edges {
             pin(toSuperview: edge,
@@ -18,7 +18,7 @@ public extension UIView {
     func pin(toSuperview edges: Edge...,
              insetBy inset: CGFloat = 0,
              priority: UILayoutPriority = .required,
-             relatedBy relation: NSLayoutRelation = .equal) {
+             relatedBy relation: NSLayoutConstraint.Relation = .equal) {
         
         var edges = edges
         
@@ -37,7 +37,7 @@ public extension UIView {
     @discardableResult private func pin(toSuperview edge: Edge,
                                         insetBy inset: CGFloat = 0,
                                         priority: UILayoutPriority = .required,
-                                        relatedBy relation: NSLayoutRelation = .equal) -> NSLayoutConstraint {
+                                        relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         
         guard let superview = self.superview else {
             preconditionFailure("view has no superview")
