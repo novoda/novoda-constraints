@@ -19,9 +19,10 @@ class ViewController: UIViewController {
         
         // Example usages:
         
-        poBox.align(.top, to: piBox)
-        poBox.align(.top, to: .bottom, of: piBox)
-
+        poBox.align(.top, with: piBox)
+        
+        poBox.pin(.top, to: .bottom, of: piBox)
+        
         poBox.pin(toSuperview: .top, .bottom, insetBy: 8)
         poBox.pin(toSuperview: .top)
         poBox.pin(toSuperview: Edge.all)
