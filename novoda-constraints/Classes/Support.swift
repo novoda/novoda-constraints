@@ -3,9 +3,10 @@ import UIKit
 public extension UIView {
     
     internal func prepareForConstraints() {
-        guard let _ = self.superview else {
+        guard let superview = self.superview else {
             fatalError("view doesn't have a superview")
         }
+        superview.translatesAutoresizingMaskIntoConstraints = false
         translatesAutoresizingMaskIntoConstraints = false
     }
     
@@ -29,10 +30,19 @@ public extension UIView {
                                             constant: constant)
         constraint.priority = priority
         
-        if let view = view {
-            view.addConstraint(constraint)
-        } else {
+        guard let view = view else {
             addConstraint(constraint)
+            return constraint
+        }
+        
+        if self == view.superview {
+            view.superview?.addConstraint(constraint)
+            
+        } else if view.superview == superview {
+            superview?.addConstraint(constraint) // If common superview, this should own the constraint
+            
+        } else {
+            view.addConstraint(constraint)
         }
         
         return constraint
