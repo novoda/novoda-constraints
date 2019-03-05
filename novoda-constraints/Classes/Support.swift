@@ -28,21 +28,18 @@ public extension UIView {
                                             attribute: otherEdge,
                                             multiplier: multiplier,
                                             constant: constant)
+        
         constraint.priority = priority
         
-        guard let view = view else {
+        guard let view = view, self != view.superview else { // If other view doesn't exist or self is not the parent, self owns constraint
             addConstraint(constraint)
             return constraint
         }
         
-        if self == view.superview {
-            view.superview?.addConstraint(constraint)
-            
-        } else if view.superview == superview {
-            superview?.addConstraint(constraint) // If common superview, this should own the constraint
-            
+        if view.superview == superview { // If common superview, parent should own the constraint
+            superview?.addConstraint(constraint)
         } else {
-            view.addConstraint(constraint)
+            view.addConstraint(constraint) // In all other cases, other view owns constraint
         }
         
         return constraint
