@@ -1,6 +1,5 @@
 import UIKit
 
-@available(iOS 9.0, *)
 public struct Anchor {
     public let constrain: (UIView, CGFloat) -> Void
     
