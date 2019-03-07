@@ -1,6 +1,5 @@
 import Foundation
 
-@available(iOS 9.0, *)
 extension UIView {
 
     var leadingSafeAnchor: NSLayoutXAxisAnchor {
