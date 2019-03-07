@@ -2,43 +2,78 @@ import UIKit
 import novoda_constraints
 
 class ViewController: UIViewController {
-
+    
+    let headerView = UIView()
+    let usernameTextField = UITextField()
+    let passwordTextField = UITextField()
+    let usernameUnderlineView = UIView()
+    let passwordUnderlineView = UIView()
+    let loginButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let piBox = UIView()
-        view.addSubview(piBox)
+        addViews()
+        setupViews()
+        addConstraints()
+    }
+    
+    func addViews() {
+        view.addSubview(headerView)
+        view.addSubview(usernameTextField)
+        view.addSubview(passwordTextField)
+        view.addSubview(usernameUnderlineView)
+        view.addSubview(passwordUnderlineView)
+        view.addSubview(loginButton)
+    }
+    
+    func setupViews() {
+        headerView.backgroundColor = .gray
         
-        piBox.pin(toSuperview: Edge.all)
+        usernameTextField.borderStyle = .none
+        usernameTextField.placeholder = "Username"
         
-        piBox.backgroundColor = .red
+        usernameUnderlineView.backgroundColor = .lightGray
         
-        let poBox = UIView()
-        piBox.addSubview(poBox)
-        poBox.backgroundColor = .blue
+        passwordTextField.borderStyle = .none
+        passwordTextField.placeholder = "Password"
+        passwordTextField.isSecureTextEntry = true
         
-        // Example usages:
+        passwordUnderlineView.backgroundColor = .lightGray
         
-        poBox.align(.top, with: piBox)
+        loginButton.setTitle("Login", for: .normal)
+        loginButton.backgroundColor = .gray
+        loginButton.tintColor = .white
+        loginButton.layer.cornerRadius = 12
+    }
+    
+    func addConstraints() {
+        headerView.pin(toSuperview: .top, insetBy: 50)
+        headerView.pin(centerXTo: view)
+        headerView.set(size: CGSize(width: 200, height: 200))
         
-        poBox.pin(.top, to: .bottom, of: piBox)
+        usernameTextField.pin(.top, to: .bottom, of: headerView, constant: 30)
+        usernameTextField.pin(toSuperview: .trailing, .leading, insetBy: 40)
+        usernameTextField.set(height: 30)
         
-        poBox.pin(toSuperview: .top, .bottom, insetBy: 8)
-        poBox.pin(toSuperview: .top)
-        poBox.pin(toSuperview: Edge.all)
-
-        poBox.pin(toSuperviewSafeArea: Anchor.all)
-        poBox.pin(toSuperviewSafeArea: .top, .bottom, insetBy: 8)
-        poBox.pin(toSuperviewSafeArea: .top)
+        usernameUnderlineView.pin(.top, to: .bottom, of: usernameTextField)
+        usernameUnderlineView.align(.leading, with: usernameTextField)
+        usernameUnderlineView.align(.trailing, with: usernameTextField)
+        usernameUnderlineView.set(height: 1)
         
-        poBox.pin(centerXTo: piBox)
-        poBox.pin(centerYTo: piBox)
-        poBox.pin(centerTo: piBox)
-
-        poBox.set(height: 50)
-        poBox.set(width: 50)
-
-        poBox.set(widthEqualTo: piBox)
-        poBox.set(sizeEqualTo: piBox)
+        passwordTextField.pin(.top, to: .bottom, of: usernameTextField, constant: 12)
+        passwordTextField.align(.leading, with: usernameTextField)
+        passwordTextField.align(.trailing, with: usernameTextField)
+        passwordTextField.set(heightEqualTo: usernameTextField)
+        
+        passwordUnderlineView.pin(.top, to: .bottom, of: passwordTextField)
+        passwordUnderlineView.align(.leading, with: passwordTextField)
+        passwordUnderlineView.align(.trailing, with: passwordTextField)
+        passwordUnderlineView.set(height: 1)
+        
+        loginButton.pin(.top, to: .bottom, of: passwordUnderlineView, constant: 20)
+        loginButton.set(height: 50)
+        loginButton.align(.leading, with: usernameTextField)
+        loginButton.align(.trailing, with: usernameTextField)
     }
 }
