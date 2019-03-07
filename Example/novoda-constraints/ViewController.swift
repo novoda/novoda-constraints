@@ -57,23 +57,19 @@ class ViewController: UIViewController {
         usernameTextField.set(height: 30)
         
         usernameUnderlineView.pin(.top, to: .bottom, of: usernameTextField)
-        usernameUnderlineView.align(.leading, with: usernameTextField)
-        usernameUnderlineView.align(.trailing, with: usernameTextField)
+        usernameUnderlineView.align(.leading, .trailing, with: usernameTextField)
         usernameUnderlineView.set(height: 1)
         
         passwordTextField.pin(.top, to: .bottom, of: usernameTextField, constant: 12)
-        passwordTextField.align(.leading, with: usernameTextField)
-        passwordTextField.align(.trailing, with: usernameTextField)
+        passwordTextField.align(.leading, .trailing, with: usernameTextField)
         passwordTextField.set(heightEqualTo: usernameTextField)
         
         passwordUnderlineView.pin(.top, to: .bottom, of: passwordTextField)
-        passwordUnderlineView.align(.leading, with: passwordTextField)
-        passwordUnderlineView.align(.trailing, with: passwordTextField)
+        passwordUnderlineView.align(.leading, .trailing, with: passwordTextField)
         passwordUnderlineView.set(height: 1)
         
         loginButton.pin(.top, to: .bottom, of: passwordUnderlineView, constant: 20)
         loginButton.set(height: 50)
-        loginButton.align(.leading, with: usernameTextField)
-        loginButton.align(.trailing, with: usernameTextField)
+        loginButton.align(.leading, .trailing, with: usernameTextField)
     }
 }
