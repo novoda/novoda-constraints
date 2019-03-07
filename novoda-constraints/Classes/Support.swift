@@ -49,7 +49,7 @@ public extension UIView {
         return pin(edge.layoutAttribute,
                    to: otherEdge.layoutAttribute,
                    of: view,
-                   constant: constant,
+                   constant: edge.offset(equivalentToInset: constant),
                    multiplier: multiplier,
                    priority: priority,
                    relatedBy: relation)
