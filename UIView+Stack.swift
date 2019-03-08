@@ -8,7 +8,15 @@
 import Foundation
 
 public extension Array where Element == UIView {
-    
+    /**
+     Stacks an array of UIViews vertically or horizontally with variadic spacing parameters
+     
+     - Parameter spacing: An array of spacings to be used between each view
+     
+     Spacing - if there are more views than spacing elements, the last spacing will be used for all remaining views.
+     I.e. using a spacing of (30, 8) will cause an initial space of 30 then 8 for the remaining views.
+     If there are more spacing values than views, extra spacing values will be ignored
+     */
     func stack(direction: NSLayoutConstraint.Axis,
                spacing: CGFloat...,
                priority: UILayoutPriority = .required,
@@ -19,7 +27,15 @@ public extension Array where Element == UIView {
               priority: priority,
               relatedBy: relation)
     }
-    
+    /**
+     Stacks an array of UIViews vertically or horizontally with an array of spacing parameters
+     
+     - Parameter spacing: An array of spacings to be used between each view
+     
+     Spacing - if there are more views than spacing elements, the last spacing will be used for all remaining views.
+     I.e. using a spacing of (30, 8) will cause an initial space of 30 then 8 for the remaining views.
+     If there are more spacing values than views, extra spacing values will be ignored
+     */
     func stack(direction: NSLayoutConstraint.Axis,
                spacing: [CGFloat] = [],
                priority: UILayoutPriority = .required,
