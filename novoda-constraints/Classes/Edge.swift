@@ -2,7 +2,7 @@ import UIKit
 
 public struct Edge: Equatable {
 
-    public let layoutAttribute: NSLayoutConstraint.Attribute
+    let layoutAttribute: NSLayoutConstraint.Attribute
     let insetMultiplier: CGFloat
     
     public static let top = Edge(layoutAttribute: .top, insetMultiplier: 1)
@@ -17,5 +17,26 @@ public struct Edge: Equatable {
     
     func offset(equivalentToInset inset: CGFloat) -> CGFloat {
         return inset * insetMultiplier
+    }
+}
+
+internal extension NSLayoutConstraint.Axis {
+    
+    var from: Edge {
+        switch self {
+        case .horizontal:
+            return .leading
+        case .vertical:
+            return .top
+        }
+    }
+    
+    var to: Edge  {
+        switch self {
+        case .horizontal:
+            return .trailing
+        case .vertical:
+            return .bottom
+        }
     }
 }

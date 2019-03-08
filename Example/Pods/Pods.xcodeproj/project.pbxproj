@@ -23,6 +23,8 @@
 		BEC91A0C6F774C62FDBEBD5A3B02BAB1 /* Pods-novoda-constraints_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 440E691A3816009FE7F25B9C5DF0E157 /* Pods-novoda-constraints_Tests-dummy.m */; };
 		C04D6E37F2CA12BC13CA25FFEBA33829 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		E35C935923DF48D23F6390C3C3B1C5A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		F44B9A0D2232BC18002289D6 /* UIView+Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B9A0C2232BC18002289D6 /* UIView+Stack.swift */; };
+		F44B9A0F2232BC9F002289D6 /* UIView+Iteration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B9A0E2232BC9F002289D6 /* UIView+Iteration.swift */; };
 		F45361082214603900230820 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45361072214603900230820 /* Support.swift */; };
 		F983AD5BC473B6B463D8F04738439547 /* Pods-novoda-constraints_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 621C6963B5F5C66B754B84D30D82D04C /* Pods-novoda-constraints_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -80,6 +82,8 @@
 		EC47B97AF2610B1E08CA18FB7DC83256 /* Pods-novoda-constraints_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-novoda-constraints_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F18F65F4DA840AA2347C728064FC5186 /* UIView+PinToViewCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinToViewCenter.swift"; path = "novoda-constraints/Classes/UIView+PinToViewCenter.swift"; sourceTree = "<group>"; };
 		F30090C7402F1F13A20EA2BECDEC6BBA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F44B9A0C2232BC18002289D6 /* UIView+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Stack.swift"; sourceTree = "<group>"; };
+		F44B9A0E2232BC9F002289D6 /* UIView+Iteration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Iteration.swift"; sourceTree = "<group>"; };
 		F45361072214603900230820 /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Support.swift; path = "novoda-constraints/Classes/Support.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,8 +134,10 @@
 				5E859F8AAC4BCDBFFDF6F18FE46D749E /* UIView+PinToSuperView.swift */,
 				F18F65F4DA840AA2347C728064FC5186 /* UIView+PinToViewCenter.swift */,
 				3D9ED906081CB6C911C732739FD0BA41 /* UIView+AlignToView.swift */,
+				F44B9A0C2232BC18002289D6 /* UIView+Stack.swift */,
 				86DE400A20DBDCB000A6746B /* UIView+SafeAreas.swift */,
 				AADD35BA2488A8763B1FE4219A9FF0B3 /* UIView+Sizing.swift */,
+				F44B9A0E2232BC9F002289D6 /* UIView+Iteration.swift */,
 				85BAF977F9D23790196AA68E57459D8D /* Pod */,
 				AD21F1D2A8DF6D89EA9B3231E0975E4F /* Support Files */,
 			);
@@ -372,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44B9A0F2232BC9F002289D6 /* UIView+Iteration.swift in Sources */,
 				80C7105EB038E27A12968D49D344D278 /* Edge.swift in Sources */,
 				F45361082214603900230820 /* Support.swift in Sources */,
 				86DE400D20DBE1D500A6746B /* UIView+Anchors.swift in Sources */,
@@ -379,6 +386,7 @@
 				975A419C912705B077D77A370665A260 /* novoda-constraints-dummy.m in Sources */,
 				6486E0E247000B5DECBB6D105C59BE3D /* UIView+PinToSuperView.swift in Sources */,
 				508058F52231848A000097D2 /* Anchor.swift in Sources */,
+				F44B9A0D2232BC18002289D6 /* UIView+Stack.swift in Sources */,
 				12D805C6821C691A53DED2466392BDCC /* UIView+AlignToView.swift in Sources */,
 				467B8DD5130D7BBCA2A158A7ABAFCA51 /* UIView+PinToViewCenter.swift in Sources */,
 				201BF69CF7CFF320CAB41BD72A3F907E /* UIView+Sizing.swift in Sources */,

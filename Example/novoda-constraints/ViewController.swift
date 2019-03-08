@@ -50,26 +50,23 @@ class ViewController: UIViewController {
     func addConstraints() {
         headerView.pin(toSuperview: .top, insetBy: 50)
         headerView.pin(centerXTo: view)
-        headerView.set(size: CGSize(width: 200, height: 200))
+        headerView.set(height: 200)
         
-        usernameTextField.pin(.top, to: .bottom, of: headerView, constant: 30)
         usernameTextField.pin(toSuperview: .trailing, .leading, insetBy: 40)
         usernameTextField.set(height: 30)
         
-        usernameUnderlineView.pin(.top, to: .bottom, of: usernameTextField)
-        usernameUnderlineView.align(.leading, .trailing, with: usernameTextField)
         usernameUnderlineView.set(height: 1)
         
-        passwordTextField.pin(.top, to: .bottom, of: usernameTextField, constant: 12)
-        passwordTextField.align(.leading, .trailing, with: usernameTextField)
         passwordTextField.set(heightEqualTo: usernameTextField)
         
-        passwordUnderlineView.pin(.top, to: .bottom, of: passwordTextField)
-        passwordUnderlineView.align(.leading, .trailing, with: passwordTextField)
         passwordUnderlineView.set(height: 1)
         
-        loginButton.pin(.top, to: .bottom, of: passwordUnderlineView, constant: 20)
         loginButton.set(height: 50)
-        loginButton.align(.leading, .trailing, with: usernameTextField)
+        
+        let views = [headerView, usernameTextField, usernameUnderlineView, passwordTextField, passwordUnderlineView, loginButton]
+        
+        views.align(edges: .leading, .trailing)
+        views.stack(direction: .vertical,
+                    spacing: 30, 0, 12, 0, 20)
     }
 }
