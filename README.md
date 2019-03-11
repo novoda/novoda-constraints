@@ -65,8 +65,8 @@ viewArray.align(edges: .leading, .trailing)
 You can also stack views in combination with the above to quickly create entire screens:
 
 ```swift
-viewsArray.stack(direction: .vertical,
-                 spacing: 30, 8)
+viewArray.stack(direction: .vertical,
+                spacing: 30, 8)
 ```
 > There are full details on how the `spacing` parameter works in the wiki cheat sheet or on the func docs in the library itself.
 
