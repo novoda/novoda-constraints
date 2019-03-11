@@ -33,7 +33,7 @@ let trailingAlign = NSLayoutConstraint(item: view,
                                        constant: 0)
 
 view.addConstraint(leadingAlign)
-view.addConstraint(trailing)
+view.addConstraint(trailingAlign)
 ```
 
 
