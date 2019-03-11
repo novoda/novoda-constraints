@@ -17,20 +17,20 @@ Writing constraints using the default iOS constraints can be cumbersome and lead
 
 ```swift
 let leadingAlign = NSLayoutConstraint(item: usernameTextField,
-                                attribute: .leading,
-                                relatedBy: .equal,
-                                toItem: passwordTextField,
-                                attribute: .leading,
-                                multiplier: 1,
-                                constant: 0)
-
-let trailingAlign = NSLayoutConstraint(item: usernameTextField,
-                                      attribute: .trailing,
+                                      attribute: .leading,
                                       relatedBy: .equal,
                                       toItem: passwordTextField,
-                                      attribute: .trailing,
+                                      attribute: .leading,
                                       multiplier: 1,
                                       constant: 0)
+
+let trailingAlign = NSLayoutConstraint(item: usernameTextField,
+                                       attribute: .trailing,
+                                       relatedBy: .equal,
+                                       toItem: passwordTextField,
+                                       attribute: .trailing,
+                                       multiplier: 1,
+                                       constant: 0)
 
 usernameTextField.addConstraint(leadingAlign)
 usernameTextField.addConstraint(trailing)
