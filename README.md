@@ -33,27 +33,35 @@ let trailingAlign = NSLayoutConstraint(item: usernameTextField,
                                       constant: 0)
 
 usernameTextField.addConstraint(leadingAlign)
+usernameTextField.addConstraint(trailing)
 ```
 
-And here is an example of aligning two views using Novoda Constraints:
+
+And here is an example of aligning two views using Novoda Constraints, optionally adding extra parameters:
 
 ```swift
-usernameTextField.align(.leading, .trailing, with: passwordTextField)
+usernameTextField.align(.leading, .trailing,
+                        with: passwordTextField)
 
-//  You can also optionally add extra parameters for the priority etc -
-
-usernameTextField.align(.leading, .trailing, with: passwordTextField, constant: 0, priority: .required, relatedBy: .equal)
+usernameTextField.align(.leading, .trailing,
+                        with: passwordTextField,
+                        constant: 0,
+                        priority: .required,
+                        relatedBy: .equal)
 ```
+
 
 If you want to align multiple views you can do this in one line!
 
 ```swift
 viewArray.align(edges: .leading, .trailing)
 
-// With extra parameters
-
-viewsArray.align(edges: .leading, .trailing, constant: 0, priority: .required, relatedBy: .equal)
+viewArray.align(edges: .leading, .trailing,
+                constant: 0,
+                priority: .required,
+                relatedBy: .equal)
 ```
+
 
 You can also stack views in combination with the above to quickly create entire screens:
 
@@ -61,9 +69,11 @@ You can also stack views in combination with the above to quickly create entire 
 viewsArray.stack(direction: .vertical,
                  spacing: 30, 8)
 ```
-> - There are full details on how the `spacing` parameter works in the wiki cheat sheet or on the func docs in the library itself.
+> There are full details on how the `spacing` parameter works in the wiki cheat sheet or on the func docs in the library itself.
+
 
 As you can see, the usage is much shorter and cleaner, allowing you to focus on the important things.
+
 
 ## Example Project
 
