@@ -37,12 +37,16 @@ usernameTextField.addConstraint(trailing)
 ```
 
 
-And here is an example of aligning two views using Novoda Constraints, optionally adding extra parameters:
+And here is an example of aligning two views using Novoda Constraints:
 
 ```swift
 usernameTextField.align(.leading, .trailing,
                         with: passwordTextField)
+```
 
+You can optionally add extra parameters to most of the functions available in this library such as:
+
+```swift
 usernameTextField.align(.leading, .trailing,
                         with: passwordTextField,
                         constant: 0,
@@ -55,11 +59,6 @@ If you want to align multiple views you can do this in one line!
 
 ```swift
 viewArray.align(edges: .leading, .trailing)
-
-viewArray.align(edges: .leading, .trailing,
-                constant: 0,
-                priority: .required,
-                relatedBy: .equal)
 ```
 
 
