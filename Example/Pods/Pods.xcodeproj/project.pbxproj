@@ -82,8 +82,8 @@
 		EC47B97AF2610B1E08CA18FB7DC83256 /* Pods-novoda-constraints_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-novoda-constraints_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F18F65F4DA840AA2347C728064FC5186 /* UIView+PinToViewCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinToViewCenter.swift"; path = "novoda-constraints/Classes/UIView+PinToViewCenter.swift"; sourceTree = "<group>"; };
 		F30090C7402F1F13A20EA2BECDEC6BBA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		F44B9A0C2232BC18002289D6 /* UIView+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Stack.swift"; sourceTree = "<group>"; };
-		F44B9A0E2232BC9F002289D6 /* UIView+Iteration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Iteration.swift"; sourceTree = "<group>"; };
+		F44B9A0C2232BC18002289D6 /* UIView+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Stack.swift"; path = "novoda-constraints/Classes/UIView+Stack.swift"; sourceTree = "<group>"; };
+		F44B9A0E2232BC9F002289D6 /* UIView+Iteration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Iteration.swift"; path = "novoda-constraints/Classes/UIView+Iteration.swift"; sourceTree = "<group>"; };
 		F45361072214603900230820 /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Support.swift; path = "novoda-constraints/Classes/Support.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
