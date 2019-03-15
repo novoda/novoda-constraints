@@ -6,7 +6,9 @@ public extension UIView {
         guard let superview = self.superview else {
             fatalError("view doesn't have a superview")
         }
-        superview.translatesAutoresizingMaskIntoConstraints = false
+        if superview.superview != nil {
+            superview.translatesAutoresizingMaskIntoConstraints = false
+        }
         translatesAutoresizingMaskIntoConstraints = false
     }
     
@@ -19,7 +21,6 @@ public extension UIView {
                                          relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         
         prepareForConstraints()
-        view?.translatesAutoresizingMaskIntoConstraints = false
         
         let constraint = NSLayoutConstraint(item: self,
                                             attribute: edge,
@@ -34,6 +35,10 @@ public extension UIView {
         guard let view = view, self != view.superview else { // If other view doesn't exist or self is not the parent, self owns constraint
             addConstraint(constraint)
             return constraint
+        }
+        
+        if view != superview {
+            view.translatesAutoresizingMaskIntoConstraints = false
         }
         
         if view.superview == superview { // If common superview, parent should own the constraint
