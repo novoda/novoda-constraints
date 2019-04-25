@@ -3,8 +3,11 @@ import UIKit
 public extension UIView {
     
     internal func prepareForConstraints() {
-        guard let _ = self.superview else {
-            fatalError("view doesn't have a superview")
+        guard let superview = self.superview else {
+            return
+        }
+        guard !(superview is UITableViewCell), !(superview is UICollectionViewCell) else {
+            return
         }
         translatesAutoresizingMaskIntoConstraints = false
     }
