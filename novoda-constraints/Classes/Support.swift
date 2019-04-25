@@ -20,8 +20,6 @@ public extension UIView {
                                          priority: UILayoutPriority = .required,
                                          relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         
-        prepareForConstraints()
-        
         let constraint = NSLayoutConstraint(item: self,
                                             attribute: edge,
                                             relatedBy: relation,
@@ -31,22 +29,36 @@ public extension UIView {
                                             constant: constant)
         
         constraint.priority = priority
-        
-        guard let view = view, self != view.superview else { // If other view doesn't exist or self is not the parent, self owns constraint
+
+        prepareForConstraints()
+
+        guard let view = view else {
+            addConstraint(constraint) // If no other view, add constraint to self
+            return constraint
+        }
+
+        view.prepareForConstraints()
+
+        if view.superview == superview { // If we are the same level, add constraint to parent
+            superview!.addConstraint(constraint)
+            return constraint
+        }
+
+        if view == superview {
+            view.addConstraint(constraint)
+            return constraint
+        }
+
+        if view.superview == self {
             addConstraint(constraint)
             return constraint
         }
-        
-        if view != superview {
-            view.translatesAutoresizingMaskIntoConstraints = false
+
+        guard let commonSuperview = nearestCommonSuperview(with: view) else {
+            fatalError("Unable to install constraint on view. Does the constraint reference something from outside the subtree of the view? That's illegal.")
         }
-        
-        if view.superview == superview { // If common superview, parent should own the constraint
-            superview?.addConstraint(constraint)
-        } else {
-            view.addConstraint(constraint) // In all other cases, other view owns constraint
-        }
-        
+
+        commonSuperview.addConstraint(constraint)
         return constraint
     }
     
