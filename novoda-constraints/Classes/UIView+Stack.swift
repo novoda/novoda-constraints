@@ -1,10 +1,3 @@
-//
-//  UIView+Stack.swift
-//  novoda-constraints
-//
-//  Created by Simon Rowlands on 08/03/2019.
-//
-
 import Foundation
 
 public extension Array where Element == UIView {

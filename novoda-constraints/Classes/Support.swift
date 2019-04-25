@@ -6,8 +6,8 @@ public extension UIView {
         guard let superview = self.superview else {
             fatalError("view doesn't have a superview")
         }
-        if superview.superview != nil {
-            superview.translatesAutoresizingMaskIntoConstraints = false
+        guard !(superview is UITableViewCell), !(superview is UICollectionViewCell) else {
+            return
         }
         translatesAutoresizingMaskIntoConstraints = false
     }
