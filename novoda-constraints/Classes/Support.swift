@@ -39,21 +39,6 @@ public extension UIView {
 
         view.prepareForConstraints()
 
-        if view.superview == superview { // If we are the same level, add constraint to parent
-            superview!.addConstraint(constraint)
-            return constraint
-        }
-
-        if view == superview {
-            view.addConstraint(constraint)
-            return constraint
-        }
-
-        if view.superview == self {
-            addConstraint(constraint)
-            return constraint
-        }
-
         guard let commonSuperview = nearestCommonSuperview(with: view) else {
             fatalError("Unable to install constraint on view. Does the constraint reference something from outside the subtree of the view? That's illegal.")
         }
