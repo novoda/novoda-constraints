@@ -1,7 +1,7 @@
 import UIKit
 import novoda_constraints
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     
     let headerView = UIView()
     let usernameTextField = UITextField()
@@ -9,13 +9,19 @@ class ViewController: UIViewController {
     let usernameUnderlineView = UIView()
     let passwordUnderlineView = UIView()
     let loginButton = UIButton()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addViews()
         setupViews()
         addConstraints()
+
+        loginButton.addTarget(nil, action: #selector(nextScreen), for: .touchUpInside)
+    }
+
+    @objc func nextScreen() {
+        navigationController?.pushViewController(TableViewController(), animated: true)
     }
     
     func addViews() {
@@ -28,6 +34,9 @@ class ViewController: UIViewController {
     }
     
     func setupViews() {
+
+        view.backgroundColor = .white
+
         headerView.backgroundColor = .gray
         
         usernameTextField.borderStyle = .none
@@ -48,17 +57,15 @@ class ViewController: UIViewController {
     }
     
     func addConstraints() {
-        headerView.pin(toSuperview: .top, insetBy: 50)
+        headerView.pin(toSuperviewSafeArea: .top, insetBy: 50)
         headerView.pin(centerXTo: view)
         headerView.set(height: 200)
         
         usernameTextField.pin(toSuperview: .trailing, .leading, insetBy: 40)
         usernameTextField.set(height: 30)
-        
         usernameUnderlineView.set(height: 1)
-        
+
         passwordTextField.set(heightEqualTo: usernameTextField)
-        
         passwordUnderlineView.set(height: 1)
         
         loginButton.set(height: 50)
