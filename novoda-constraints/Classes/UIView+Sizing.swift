@@ -74,3 +74,40 @@ public extension UIView {
             relatedBy: relation)
     }
 }
+
+public extension Array where Element == UIView {
+    func size(height constant: CGFloat,
+              multiplier: CGFloat = 1,
+              priority: UILayoutPriority = .required,
+              relatedBy relation: NSLayoutConstraint.Relation = .equal) {
+        size(attribute: .height,
+             constant: constant,
+             multiplier: multiplier,
+             priority: priority,
+             relatedBy: relation)
+    }
+    func size(width constant: CGFloat,
+              multiplier: CGFloat = 1,
+              priority: UILayoutPriority = .required,
+              relatedBy relation: NSLayoutConstraint.Relation = .equal) {
+        size(attribute: .width,
+             constant: constant,
+             multiplier: multiplier,
+             priority: priority,
+             relatedBy: relation)
+    }
+    private func size(attribute: NSLayoutConstraint.Attribute,
+                      constant: CGFloat = 0,
+                      multiplier: CGFloat = 1,
+                      priority: UILayoutPriority = .required,
+                      relatedBy relation: NSLayoutConstraint.Relation = .equal) {
+
+        forEach { view in
+            view.pin(attribute,
+                     constant: constant,
+                     multiplier: multiplier,
+                     priority: priority,
+                     relatedBy: relation)
+        }
+    }
+}
