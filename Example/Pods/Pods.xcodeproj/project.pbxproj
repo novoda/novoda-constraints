@@ -15,7 +15,7 @@
 		508058F52231848A000097D2 /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508058F42231848A000097D2 /* Anchor.swift */; };
 		6486E0E247000B5DECBB6D105C59BE3D /* UIView+PinToSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E859F8AAC4BCDBFFDF6F18FE46D749E /* UIView+PinToSuperview.swift */; };
 		80C7105EB038E27A12968D49D344D278 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C628D6AE6F54D86574720A287B601737 /* Edge.swift */; };
-		86DE400B20DBDCB000A6746B /* UIView+PinSafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DE400A20DBDCB000A6746B /* UIView+PinSafeArea.swift */; };
+		86DE400B20DBDCB000A6746B /* UIView+PinToSafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DE400A20DBDCB000A6746B /* UIView+PinToSafeArea.swift */; };
 		86DE400D20DBE1D500A6746B /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DE400C20DBE1D500A6746B /* UIView+Anchor.swift */; };
 		975A419C912705B077D77A370665A260 /* novoda-constraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9582B8429FEE65B12687485C0393F562 /* novoda-constraints-dummy.m */; };
 		987416D7EAC048EF4180CF988B058328 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
@@ -64,7 +64,7 @@
 		621C6963B5F5C66B754B84D30D82D04C /* Pods-novoda-constraints_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-novoda-constraints_Example-umbrella.h"; sourceTree = "<group>"; };
 		66D568C9AB62FC58490A3EAB80CE8804 /* novoda-constraints.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = "novoda-constraints.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7714FF62532200BC97F4B91FE4AA95AF /* novoda-constraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "novoda-constraints-umbrella.h"; sourceTree = "<group>"; };
-		86DE400A20DBDCB000A6746B /* UIView+PinSafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+PinSafeArea.swift"; path = "novoda-constraints/Classes/UIView+PinSafeArea.swift"; sourceTree = "<group>"; };
+		86DE400A20DBDCB000A6746B /* UIView+PinToSafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+PinToSafeArea.swift"; path = "novoda-constraints/Classes/UIView+PinToSafeArea.swift"; sourceTree = "<group>"; };
 		86DE400C20DBE1D500A6746B /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Anchor.swift"; path = "novoda-constraints/Classes/UIView+Anchor.swift"; sourceTree = "<group>"; };
 		8BBB1719A9DC30C3F5D392275AA2CA65 /* Pods-novoda-constraints_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-novoda-constraints_Tests.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -132,7 +132,7 @@
 				F45361072214603900230820 /* Support.swift */,
 				86DE400C20DBE1D500A6746B /* UIView+Anchor.swift */,
 				5E859F8AAC4BCDBFFDF6F18FE46D749E /* UIView+PinToSuperview.swift */,
-				86DE400A20DBDCB000A6746B /* UIView+PinSafeArea.swift */,
+				86DE400A20DBDCB000A6746B /* UIView+PinToSafeArea.swift */,
 				F18F65F4DA840AA2347C728064FC5186 /* UIView+PinCenter.swift */,
 				3D9ED906081CB6C911C732739FD0BA41 /* UIView+Align.swift */,
 				F44B9A0C2232BC18002289D6 /* UIView+Stack.swift */,
@@ -382,7 +382,7 @@
 				80C7105EB038E27A12968D49D344D278 /* Edge.swift in Sources */,
 				F45361082214603900230820 /* Support.swift in Sources */,
 				86DE400D20DBE1D500A6746B /* UIView+Anchor.swift in Sources */,
-				86DE400B20DBDCB000A6746B /* UIView+PinSafeArea.swift in Sources */,
+				86DE400B20DBDCB000A6746B /* UIView+PinToSafeArea.swift in Sources */,
 				975A419C912705B077D77A370665A260 /* novoda-constraints-dummy.m in Sources */,
 				6486E0E247000B5DECBB6D105C59BE3D /* UIView+PinToSuperview.swift in Sources */,
 				508058F52231848A000097D2 /* Anchor.swift in Sources */,
