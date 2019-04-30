@@ -1,6 +1,6 @@
 import UIKit
 
-internal extension Array where Element == UIView {
+internal extension Sequence where Element == UIView {
     func iterate(apply: (_ view: UIView, _ lastView: UIView, _ index: Int) -> Void) {
         
         var lastView: UIView? = nil

@@ -75,7 +75,7 @@ public extension UIView {
     }
 }
 
-public extension Array where Element == UIView {
+public extension Sequence where Element == UIView {
     func size(height constant: CGFloat,
               multiplier: CGFloat = 1,
               priority: UILayoutPriority = .required,

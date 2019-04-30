@@ -1,6 +1,6 @@
 import Foundation
 
-public extension Array where Element == UIView {
+public extension Sequence where Element == UIView {
     /**
      Stacks an array of UIViews vertically or horizontally with variadic spacing parameters
      

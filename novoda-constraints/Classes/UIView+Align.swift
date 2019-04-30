@@ -32,7 +32,7 @@ public extension UIView {
     }
 }
 
-public extension Array where Element == UIView {
+public extension Sequence where Element == UIView {
     
     func align(edges: Edge...,
                constant: CGFloat = 0,
