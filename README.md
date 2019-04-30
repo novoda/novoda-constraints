@@ -78,7 +78,9 @@ You can size the height and width of an array of views to the same value using .
 
 ```swift
 viewArray.size(height: 50)
+```
 or
+```swift
 viewArray.size(width: 50)
 ```
 
