@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		09816DEB2A8A30E0E21762145A233C77 /* Pods-novoda-constraints_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC47B97AF2610B1E08CA18FB7DC83256 /* Pods-novoda-constraints_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12D805C6821C691A53DED2466392BDCC /* UIView+AlignToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9ED906081CB6C911C732739FD0BA41 /* UIView+AlignToView.swift */; };
+		12D805C6821C691A53DED2466392BDCC /* UIView+Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9ED906081CB6C911C732739FD0BA41 /* UIView+Align.swift */; };
 		187AC34537F4A1E62734D646558C1447 /* Pods-novoda-constraints_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDE5CF9AC2CDC9A004802423263A3B /* Pods-novoda-constraints_Example-dummy.m */; };
 		201BF69CF7CFF320CAB41BD72A3F907E /* UIView+Sizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD35BA2488A8763B1FE4219A9FF0B3 /* UIView+Sizing.swift */; };
-		467B8DD5130D7BBCA2A158A7ABAFCA51 /* UIView+PinToViewCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18F65F4DA840AA2347C728064FC5186 /* UIView+PinToViewCenter.swift */; };
+		467B8DD5130D7BBCA2A158A7ABAFCA51 /* UIView+PinCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18F65F4DA840AA2347C728064FC5186 /* UIView+PinCenter.swift */; };
 		508058F52231848A000097D2 /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508058F42231848A000097D2 /* Anchor.swift */; };
-		6486E0E247000B5DECBB6D105C59BE3D /* UIView+PinToSuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E859F8AAC4BCDBFFDF6F18FE46D749E /* UIView+PinToSuperView.swift */; };
+		6486E0E247000B5DECBB6D105C59BE3D /* UIView+PinToSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E859F8AAC4BCDBFFDF6F18FE46D749E /* UIView+PinToSuperview.swift */; };
 		80C7105EB038E27A12968D49D344D278 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C628D6AE6F54D86574720A287B601737 /* Edge.swift */; };
-		86DE400B20DBDCB000A6746B /* UIView+SafeAreas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DE400A20DBDCB000A6746B /* UIView+SafeAreas.swift */; };
-		86DE400D20DBE1D500A6746B /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DE400C20DBE1D500A6746B /* UIView+Anchors.swift */; };
+		86DE400B20DBDCB000A6746B /* UIView+PinSafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DE400A20DBDCB000A6746B /* UIView+PinSafeArea.swift */; };
+		86DE400D20DBE1D500A6746B /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DE400C20DBE1D500A6746B /* UIView+Anchor.swift */; };
 		975A419C912705B077D77A370665A260 /* novoda-constraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9582B8429FEE65B12687485C0393F562 /* novoda-constraints-dummy.m */; };
 		987416D7EAC048EF4180CF988B058328 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		98C53F05E9EEF0EF152FD5BA49D8E84D /* novoda-constraints-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7714FF62532200BC97F4B91FE4AA95AF /* novoda-constraints-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,7 +49,7 @@
 		2FBA941EFDA3CF29FFF387816E3D0F0E /* novoda-constraints.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "novoda-constraints.xcconfig"; sourceTree = "<group>"; };
 		340EE12739A57A02664D6924BE7DD8B0 /* Pods-novoda-constraints_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-novoda-constraints_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3D02F52276E3A2B8578E37BB4954E11F /* Pods-novoda-constraints_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-novoda-constraints_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3D9ED906081CB6C911C732739FD0BA41 /* UIView+AlignToView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AlignToView.swift"; path = "novoda-constraints/Classes/UIView+AlignToView.swift"; sourceTree = "<group>"; };
+		3D9ED906081CB6C911C732739FD0BA41 /* UIView+Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Align.swift"; path = "novoda-constraints/Classes/UIView+Align.swift"; sourceTree = "<group>"; };
 		440E691A3816009FE7F25B9C5DF0E157 /* Pods-novoda-constraints_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-novoda-constraints_Tests-dummy.m"; sourceTree = "<group>"; };
 		46A1784A19FA07CCB5640D9EF70E32D8 /* novoda_constraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = novoda_constraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		481A5C48C410926FC3BAE13EF29AA48C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,13 +59,13 @@
 		508058F42231848A000097D2 /* Anchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Anchor.swift; path = "novoda-constraints/Classes/Anchor.swift"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5A8C2A98C85370EA09C3F99E003FEB1B /* Pods-novoda-constraints_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-novoda-constraints_Example.modulemap"; sourceTree = "<group>"; };
-		5E859F8AAC4BCDBFFDF6F18FE46D749E /* UIView+PinToSuperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinToSuperView.swift"; path = "novoda-constraints/Classes/UIView+PinToSuperView.swift"; sourceTree = "<group>"; };
+		5E859F8AAC4BCDBFFDF6F18FE46D749E /* UIView+PinToSuperview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinToSuperview.swift"; path = "novoda-constraints/Classes/UIView+PinToSuperview.swift"; sourceTree = "<group>"; };
 		5F24E9B6A72A5465919D512822F9FF75 /* Pods-novoda-constraints_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-novoda-constraints_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		621C6963B5F5C66B754B84D30D82D04C /* Pods-novoda-constraints_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-novoda-constraints_Example-umbrella.h"; sourceTree = "<group>"; };
 		66D568C9AB62FC58490A3EAB80CE8804 /* novoda-constraints.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = "novoda-constraints.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7714FF62532200BC97F4B91FE4AA95AF /* novoda-constraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "novoda-constraints-umbrella.h"; sourceTree = "<group>"; };
-		86DE400A20DBDCB000A6746B /* UIView+SafeAreas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+SafeAreas.swift"; path = "novoda-constraints/Classes/UIView+SafeAreas.swift"; sourceTree = "<group>"; };
-		86DE400C20DBE1D500A6746B /* UIView+Anchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Anchors.swift"; path = "novoda-constraints/Classes/UIView+Anchors.swift"; sourceTree = "<group>"; };
+		86DE400A20DBDCB000A6746B /* UIView+PinSafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+PinSafeArea.swift"; path = "novoda-constraints/Classes/UIView+PinSafeArea.swift"; sourceTree = "<group>"; };
+		86DE400C20DBE1D500A6746B /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Anchor.swift"; path = "novoda-constraints/Classes/UIView+Anchor.swift"; sourceTree = "<group>"; };
 		8BBB1719A9DC30C3F5D392275AA2CA65 /* Pods-novoda-constraints_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-novoda-constraints_Tests.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9582B8429FEE65B12687485C0393F562 /* novoda-constraints-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "novoda-constraints-dummy.m"; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		DF335DB082E5E2221C243599D6F84A10 /* Pods_novoda_constraints_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_novoda_constraints_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E879DEF82D569F1F774F0CCFF710BB70 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC47B97AF2610B1E08CA18FB7DC83256 /* Pods-novoda-constraints_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-novoda-constraints_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F18F65F4DA840AA2347C728064FC5186 /* UIView+PinToViewCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinToViewCenter.swift"; path = "novoda-constraints/Classes/UIView+PinToViewCenter.swift"; sourceTree = "<group>"; };
+		F18F65F4DA840AA2347C728064FC5186 /* UIView+PinCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinCenter.swift"; path = "novoda-constraints/Classes/UIView+PinCenter.swift"; sourceTree = "<group>"; };
 		F30090C7402F1F13A20EA2BECDEC6BBA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F44B9A0C2232BC18002289D6 /* UIView+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Stack.swift"; path = "novoda-constraints/Classes/UIView+Stack.swift"; sourceTree = "<group>"; };
 		F44B9A0E2232BC9F002289D6 /* UIView+Iteration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Iteration.swift"; path = "novoda-constraints/Classes/UIView+Iteration.swift"; sourceTree = "<group>"; };
@@ -130,12 +130,12 @@
 				508058F42231848A000097D2 /* Anchor.swift */,
 				C628D6AE6F54D86574720A287B601737 /* Edge.swift */,
 				F45361072214603900230820 /* Support.swift */,
-				86DE400C20DBE1D500A6746B /* UIView+Anchors.swift */,
-				5E859F8AAC4BCDBFFDF6F18FE46D749E /* UIView+PinToSuperView.swift */,
-				F18F65F4DA840AA2347C728064FC5186 /* UIView+PinToViewCenter.swift */,
-				3D9ED906081CB6C911C732739FD0BA41 /* UIView+AlignToView.swift */,
+				86DE400C20DBE1D500A6746B /* UIView+Anchor.swift */,
+				5E859F8AAC4BCDBFFDF6F18FE46D749E /* UIView+PinToSuperview.swift */,
+				86DE400A20DBDCB000A6746B /* UIView+PinSafeArea.swift */,
+				F18F65F4DA840AA2347C728064FC5186 /* UIView+PinCenter.swift */,
+				3D9ED906081CB6C911C732739FD0BA41 /* UIView+Align.swift */,
 				F44B9A0C2232BC18002289D6 /* UIView+Stack.swift */,
-				86DE400A20DBDCB000A6746B /* UIView+SafeAreas.swift */,
 				AADD35BA2488A8763B1FE4219A9FF0B3 /* UIView+Sizing.swift */,
 				F44B9A0E2232BC9F002289D6 /* UIView+Iteration.swift */,
 				85BAF977F9D23790196AA68E57459D8D /* Pod */,
@@ -381,14 +381,14 @@
 				F44B9A0F2232BC9F002289D6 /* UIView+Iteration.swift in Sources */,
 				80C7105EB038E27A12968D49D344D278 /* Edge.swift in Sources */,
 				F45361082214603900230820 /* Support.swift in Sources */,
-				86DE400D20DBE1D500A6746B /* UIView+Anchors.swift in Sources */,
-				86DE400B20DBDCB000A6746B /* UIView+SafeAreas.swift in Sources */,
+				86DE400D20DBE1D500A6746B /* UIView+Anchor.swift in Sources */,
+				86DE400B20DBDCB000A6746B /* UIView+PinSafeArea.swift in Sources */,
 				975A419C912705B077D77A370665A260 /* novoda-constraints-dummy.m in Sources */,
-				6486E0E247000B5DECBB6D105C59BE3D /* UIView+PinToSuperView.swift in Sources */,
+				6486E0E247000B5DECBB6D105C59BE3D /* UIView+PinToSuperview.swift in Sources */,
 				508058F52231848A000097D2 /* Anchor.swift in Sources */,
 				F44B9A0D2232BC18002289D6 /* UIView+Stack.swift in Sources */,
-				12D805C6821C691A53DED2466392BDCC /* UIView+AlignToView.swift in Sources */,
-				467B8DD5130D7BBCA2A158A7ABAFCA51 /* UIView+PinToViewCenter.swift in Sources */,
+				12D805C6821C691A53DED2466392BDCC /* UIView+Align.swift in Sources */,
+				467B8DD5130D7BBCA2A158A7ABAFCA51 /* UIView+PinCenter.swift in Sources */,
 				201BF69CF7CFF320CAB41BD72A3F907E /* UIView+Sizing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
