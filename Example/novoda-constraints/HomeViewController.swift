@@ -1,7 +1,7 @@
 import UIKit
 import novoda_constraints
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     
     let headerView = UIView()
     let usernameTextField = UITextField()
@@ -9,6 +9,13 @@ class ViewController: UIViewController {
     let usernameUnderlineView = UIView()
     let passwordUnderlineView = UIView()
     let loginButton = UIButton()
+
+    let containerView = UIView()
+    let subContainerA = UIView()
+    let subContainerB = UIView()
+
+    let subLabelA = UILabel()
+    let subLabelB = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +23,12 @@ class ViewController: UIViewController {
         addViews()
         setupViews()
         addConstraints()
+
+        loginButton.addTarget(nil, action: #selector(nextScreen), for: .touchUpInside)
+    }
+
+    @objc func nextScreen() {
+        navigationController?.pushViewController(TableViewController(), animated: true)
     }
     
     func addViews() {
@@ -25,9 +38,18 @@ class ViewController: UIViewController {
         view.addSubview(usernameUnderlineView)
         view.addSubview(passwordUnderlineView)
         view.addSubview(loginButton)
+
+        view.addSubview(containerView)
+        containerView.addSubview(subContainerA)
+        containerView.addSubview(subContainerB)
+        subContainerA.addSubview(subLabelA)
+        subContainerB.addSubview(subLabelB)
     }
     
     func setupViews() {
+
+        view.backgroundColor = .white
+
         headerView.backgroundColor = .gray
         
         usernameTextField.borderStyle = .none
@@ -45,20 +67,34 @@ class ViewController: UIViewController {
         loginButton.backgroundColor = .gray
         loginButton.tintColor = .white
         loginButton.layer.cornerRadius = 12
+
+        subLabelA.text = "A"
+        subLabelB.text = "B"
     }
     
     func addConstraints() {
-        headerView.pin(toSuperview: .top, insetBy: 50)
+
+        containerView.pin(toSuperviewSafeArea: Anchor.all)
+        subContainerA.pin(toSuperview: .top, .leading, .bottom)
+        subContainerB.pin(toSuperview: .top, .trailing, .bottom)
+        subContainerB.pin(.leading, to: .trailing, of: subContainerA)
+
+        subContainerA.set(heightEqualTo: subContainerB)
+
+        subLabelA.pin(toSuperview: .top, .leading, .bottom)
+        subLabelB.pin(toSuperview: .trailing, .bottom)
+
+        subLabelB.pin(.top, to: .top, of: subLabelA)
+
+        headerView.pin(toSuperviewSafeArea: .top, insetBy: 50)
         headerView.pin(centerXTo: view)
         headerView.set(height: 200)
         
         usernameTextField.pin(toSuperview: .trailing, .leading, insetBy: 40)
         usernameTextField.set(height: 30)
-        
         usernameUnderlineView.set(height: 1)
-        
+
         passwordTextField.set(heightEqualTo: usernameTextField)
-        
         passwordUnderlineView.set(height: 1)
         
         loginButton.set(height: 50)
