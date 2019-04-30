@@ -10,13 +10,6 @@ class HomeViewController: UIViewController {
     let passwordUnderlineView = UIView()
     let loginButton = UIButton()
 
-    let containerView = UIView()
-    let subContainerA = UIView()
-    let subContainerB = UIView()
-
-    let subLabelA = UILabel()
-    let subLabelB = UILabel()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,12 +31,6 @@ class HomeViewController: UIViewController {
         view.addSubview(usernameUnderlineView)
         view.addSubview(passwordUnderlineView)
         view.addSubview(loginButton)
-
-        view.addSubview(containerView)
-        containerView.addSubview(subContainerA)
-        containerView.addSubview(subContainerB)
-        subContainerA.addSubview(subLabelA)
-        subContainerB.addSubview(subLabelB)
     }
     
     func setupViews() {
@@ -67,25 +54,9 @@ class HomeViewController: UIViewController {
         loginButton.backgroundColor = .gray
         loginButton.tintColor = .white
         loginButton.layer.cornerRadius = 12
-
-        subLabelA.text = "A"
-        subLabelB.text = "B"
     }
     
     func addConstraints() {
-
-        containerView.pin(toSuperviewSafeArea: Anchor.all)
-        subContainerA.pin(toSuperview: .top, .leading, .bottom)
-        subContainerB.pin(toSuperview: .top, .trailing, .bottom)
-        subContainerB.pin(.leading, to: .trailing, of: subContainerA)
-
-        subContainerA.set(heightEqualTo: subContainerB)
-
-        subLabelA.pin(toSuperview: .top, .leading, .bottom)
-        subLabelB.pin(toSuperview: .trailing, .bottom)
-
-        subLabelB.pin(.top, to: .top, of: subLabelA)
-
         headerView.pin(toSuperviewSafeArea: .top, insetBy: 50)
         headerView.pin(centerXTo: view)
         headerView.set(height: 200)
