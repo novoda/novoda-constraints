@@ -2,12 +2,24 @@ import UIKit
 
 public extension UIView {
     
-    @discardableResult func set(height constant: CGFloat) -> NSLayoutConstraint {
-        return pin(.height, constant: constant)
+    @discardableResult func set(height constant: CGFloat,
+                                multiplier: CGFloat = 1,
+                                priority: UILayoutPriority = .required,
+                                relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
+        return pin(.height, constant: constant,
+                   multiplier: multiplier,
+                   priority: priority,
+                   relatedBy: relation)
     }
     
-    @discardableResult func set(width constant: CGFloat) -> NSLayoutConstraint {
-        return pin(.width, constant: constant)
+    @discardableResult func set(width constant: CGFloat,
+                                multiplier: CGFloat = 1,
+                                priority: UILayoutPriority = .required,
+                                relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
+        return pin(.width, constant: constant,
+                   multiplier: multiplier,
+                   priority: priority,
+                   relatedBy: relation)
     }
     
     @discardableResult func set(widthEqualTo view: UIView,
