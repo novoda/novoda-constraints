@@ -88,6 +88,7 @@ view.pin(centerYTo: otherView)
 view.pin(centerTo: otherView)
 
 view.pin(.top, to: .bottom, of: otherView)
+view.pin(.top, to: .bottom, of: otherView, constant: 30)
 ```
 > Note how when pinning to superview we use Edge.all and for superview safe area we use Anchor.all. This is due to the fact that the safe area layout guide uses anchors instead of constraint attributes.
 
