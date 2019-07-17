@@ -72,6 +72,18 @@ viewArray.stack(direction: .vertical,
 
 > In short; the spacing parameter takes any number of spacings and applies these spacings to the views, the last spacing provided will be used for any subsequent views. E.g. provided a single spacing of 8 will apply 8 spacing to every view in the array.
 
+## Size
+
+You can size the height and width of an array of views to the same value using .size:
+
+```swift
+viewArray.size(height: 50)
+```
+or
+```swift
+viewArray.size(width: 50)
+```
+
 ## Pin
 
 You can pin a view to its superview, its superview safe area, its center axis or to another view
