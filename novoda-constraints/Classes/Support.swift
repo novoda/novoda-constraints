@@ -47,13 +47,13 @@ public extension UIView {
         return constraint
     }
     
-    @discardableResult public func pin(_ edge: Edge,
-                                       to otherEdge: Edge,
-                                       of view: UIView,
-                                       constant: CGFloat = 0,
-                                       multiplier: CGFloat = 1,
-                                       priority: UILayoutPriority = .required,
-                                       relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
+    @discardableResult func pin(_ edge: Edge,
+                                to otherEdge: Edge,
+                                of view: UIView,
+                                constant: CGFloat = 0,
+                                multiplier: CGFloat = 1,
+                                priority: UILayoutPriority = .required,
+                                relatedBy relation: NSLayoutConstraint.Relation = .equal) -> NSLayoutConstraint {
         
         return pin(edge.layoutAttribute,
                    to: otherEdge.layoutAttribute,
