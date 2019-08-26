@@ -25,6 +25,8 @@ internal extension NSLayoutConstraint.Axis {
             return .leading
         case .vertical:
             return .top
+        @unknown default:
+            preconditionFailure("Trying to use unsupported axis")
         }
     }
     
@@ -34,6 +36,8 @@ internal extension NSLayoutConstraint.Axis {
             return .trailing
         case .vertical:
             return .bottom
+        @unknown default:
+            preconditionFailure("Trying to use unsupported axis")
         }
     }
 }
