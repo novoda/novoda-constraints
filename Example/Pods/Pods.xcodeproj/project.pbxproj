@@ -7,286 +7,288 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09816DEB2A8A30E0E21762145A233C77 /* Pods-novoda-constraints_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC47B97AF2610B1E08CA18FB7DC83256 /* Pods-novoda-constraints_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12D805C6821C691A53DED2466392BDCC /* UIView+Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9ED906081CB6C911C732739FD0BA41 /* UIView+Align.swift */; };
-		187AC34537F4A1E62734D646558C1447 /* Pods-novoda-constraints_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDE5CF9AC2CDC9A004802423263A3B /* Pods-novoda-constraints_Example-dummy.m */; };
-		201BF69CF7CFF320CAB41BD72A3F907E /* UIView+Sizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD35BA2488A8763B1FE4219A9FF0B3 /* UIView+Sizing.swift */; };
-		467B8DD5130D7BBCA2A158A7ABAFCA51 /* UIView+PinCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18F65F4DA840AA2347C728064FC5186 /* UIView+PinCenter.swift */; };
-		508058F52231848A000097D2 /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508058F42231848A000097D2 /* Anchor.swift */; };
-		6486E0E247000B5DECBB6D105C59BE3D /* UIView+PinToSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E859F8AAC4BCDBFFDF6F18FE46D749E /* UIView+PinToSuperview.swift */; };
-		80C7105EB038E27A12968D49D344D278 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C628D6AE6F54D86574720A287B601737 /* Edge.swift */; };
-		86DE400B20DBDCB000A6746B /* UIView+PinToSafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DE400A20DBDCB000A6746B /* UIView+PinToSafeArea.swift */; };
-		86DE400D20DBE1D500A6746B /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DE400C20DBE1D500A6746B /* UIView+Anchor.swift */; };
-		975A419C912705B077D77A370665A260 /* novoda-constraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9582B8429FEE65B12687485C0393F562 /* novoda-constraints-dummy.m */; };
-		987416D7EAC048EF4180CF988B058328 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		98C53F05E9EEF0EF152FD5BA49D8E84D /* novoda-constraints-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7714FF62532200BC97F4B91FE4AA95AF /* novoda-constraints-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEC91A0C6F774C62FDBEBD5A3B02BAB1 /* Pods-novoda-constraints_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 440E691A3816009FE7F25B9C5DF0E157 /* Pods-novoda-constraints_Tests-dummy.m */; };
-		C04D6E37F2CA12BC13CA25FFEBA33829 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		E35C935923DF48D23F6390C3C3B1C5A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		F44B9A0D2232BC18002289D6 /* UIView+Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B9A0C2232BC18002289D6 /* UIView+Stack.swift */; };
-		F44B9A0F2232BC9F002289D6 /* UIView+Iteration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B9A0E2232BC9F002289D6 /* UIView+Iteration.swift */; };
-		F45361082214603900230820 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45361072214603900230820 /* Support.swift */; };
-		F983AD5BC473B6B463D8F04738439547 /* Pods-novoda-constraints_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 621C6963B5F5C66B754B84D30D82D04C /* Pods-novoda-constraints_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		061E841A698076D6EDEED64F61D24626 /* UIView+Iteration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10147625200AFB882D756B10DB3665 /* UIView+Iteration.swift */; };
+		1123C33B5C55E56FD5ADFE9086C8B356 /* UIView+Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E238AD9DC162FF191CFD238732413 /* UIView+Stack.swift */; };
+		188BA0D2A8CDC858D643B48F86B43DBF /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC586C4E5E733CA48AAB23337D393E46 /* Anchor.swift */; };
+		2D61D7579DEDF04897786041799982FA /* Pods-novoda-constraints_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF8E9D1E0541DD76B4F85A41A9B31DD /* Pods-novoda-constraints_Tests-dummy.m */; };
+		344A31A326F8A9F9E1E9AC63266E66FD /* UIView+PinToSafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B83AE683DC7CB86A212728D798A24FD /* UIView+PinToSafeArea.swift */; };
+		502BFC8CC4307C6EC2C880D047ADF32E /* UIView+PinCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6212176875F42DB7847107C79B596FE /* UIView+PinCenter.swift */; };
+		5A87DA51F05F0D34A5A3D4942E8EE229 /* UIView+PinToSuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84D10E7DFE3979D4E9074FA707FC589 /* UIView+PinToSuperView.swift */; };
+		6CC2BFF5FF553CA58634FA223AE8080A /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2908CE90BDFB56934EA452AFBE4AC405 /* Support.swift */; };
+		8142EA41339443B8A127C793AC29CB77 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF42A9D28472E29E068D5612B1E291C /* Edge.swift */; };
+		825630DB16BD9840CA306D6A0E62748A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		83EF302A7964578A339DAD4D80F2EBF5 /* UIView+Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945D3ED7881A940ABA3054C3046E6B7B /* UIView+Align.swift */; };
+		862ED84073C5119D41703500F02375D7 /* Pods-novoda-constraints_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 731745697F3F18450E88D3FFF8AFCBE7 /* Pods-novoda-constraints_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3E6D1C7BA55F3750575A1C6408E4259 /* novoda-constraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F026D74DF4F647EE7F51EBE6E5669E99 /* novoda-constraints-dummy.m */; };
+		A6D6796A5BC6A300265187A5FED54C2E /* Pods-novoda-constraints_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A20C18C354D829462BFDD8B75C93D36 /* Pods-novoda-constraints_Example-dummy.m */; };
+		A78EED2338BF46F28B207FFF4C581866 /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C7F1FA4E905AC8441B2F08CF197F74 /* UIView+Anchor.swift */; };
+		A826E47D55B86227A57435A7C5CFA29A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		AF92DC9A98C3562DB3CC047588C9D2DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B041578E92CA8BDD7D31408FCC4834F3 /* novoda-constraints-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 333EA9EF2B7AE63421EBE78291170A8C /* novoda-constraints-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C078DCFCBFF503B6AE86182CCC53A2F2 /* Pods-novoda-constraints_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C71555BF6365465E67F423695CD8A5F1 /* Pods-novoda-constraints_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB16A98A258E2BDC817E68EA1B670B73 /* UIView+Sizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCA039829216CE653502D473D5899B2 /* UIView+Sizing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2AF0F74E5A4021D5DCFF6A151E6C1580 /* PBXContainerItemProxy */ = {
+		75942FB903ADDF8719465A6864117251 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6B0A5E31E90CAB99665B1BDC7830CD74;
+			remoteGlobalIDString = E43E5157D511FBD5B75DA492E0817B78;
+			remoteInfo = "Pods-novoda-constraints_Example";
+		};
+		B4E95A182EE22D7E7B67CEC34F7117D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1343CEC269407BDCF05654F6B74EE54D;
 			remoteInfo = "novoda-constraints";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03AC9FFF092CBDFB2A19364744263173 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1DC88CAB47F48C5C65D9BE36DBEC1CFB /* Pods-novoda-constraints_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-novoda-constraints_Example-resources.sh"; sourceTree = "<group>"; };
-		26508AA7D5D32AB21F3CD6D9B7A14A6E /* Pods-novoda-constraints_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-novoda-constraints_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		27B8043E8F75C16A23A17F4262E53EC3 /* Pods_novoda_constraints_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_novoda_constraints_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D4BC960554B04BBD38F14D39F50B2FF /* Pods-novoda-constraints_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-novoda-constraints_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2F233FB8CBF5060155FEC9C137931A1E /* novoda-constraints.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "novoda-constraints.modulemap"; sourceTree = "<group>"; };
-		2FBA941EFDA3CF29FFF387816E3D0F0E /* novoda-constraints.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "novoda-constraints.xcconfig"; sourceTree = "<group>"; };
-		340EE12739A57A02664D6924BE7DD8B0 /* Pods-novoda-constraints_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-novoda-constraints_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3D02F52276E3A2B8578E37BB4954E11F /* Pods-novoda-constraints_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-novoda-constraints_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3D9ED906081CB6C911C732739FD0BA41 /* UIView+Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Align.swift"; path = "novoda-constraints/Classes/UIView+Align.swift"; sourceTree = "<group>"; };
-		440E691A3816009FE7F25B9C5DF0E157 /* Pods-novoda-constraints_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-novoda-constraints_Tests-dummy.m"; sourceTree = "<group>"; };
-		46A1784A19FA07CCB5640D9EF70E32D8 /* novoda_constraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = novoda_constraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		481A5C48C410926FC3BAE13EF29AA48C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49221B9C5D989927B864DE9C95ABDE01 /* Pods-novoda-constraints_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-novoda-constraints_Example-frameworks.sh"; sourceTree = "<group>"; };
-		4A8507AF1806A1C360D1FC6A54C0D44B /* Pods-novoda-constraints_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-novoda-constraints_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4F1DB963295E9906852B8DB052C16FA4 /* Pods-novoda-constraints_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-novoda-constraints_Tests-resources.sh"; sourceTree = "<group>"; };
-		508058F42231848A000097D2 /* Anchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Anchor.swift; path = "novoda-constraints/Classes/Anchor.swift"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5A8C2A98C85370EA09C3F99E003FEB1B /* Pods-novoda-constraints_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-novoda-constraints_Example.modulemap"; sourceTree = "<group>"; };
-		5E859F8AAC4BCDBFFDF6F18FE46D749E /* UIView+PinToSuperview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinToSuperview.swift"; path = "novoda-constraints/Classes/UIView+PinToSuperview.swift"; sourceTree = "<group>"; };
-		5F24E9B6A72A5465919D512822F9FF75 /* Pods-novoda-constraints_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-novoda-constraints_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		621C6963B5F5C66B754B84D30D82D04C /* Pods-novoda-constraints_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-novoda-constraints_Example-umbrella.h"; sourceTree = "<group>"; };
-		66D568C9AB62FC58490A3EAB80CE8804 /* novoda-constraints.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = "novoda-constraints.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		7714FF62532200BC97F4B91FE4AA95AF /* novoda-constraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "novoda-constraints-umbrella.h"; sourceTree = "<group>"; };
-		86DE400A20DBDCB000A6746B /* UIView+PinToSafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+PinToSafeArea.swift"; path = "novoda-constraints/Classes/UIView+PinToSafeArea.swift"; sourceTree = "<group>"; };
-		86DE400C20DBE1D500A6746B /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Anchor.swift"; path = "novoda-constraints/Classes/UIView+Anchor.swift"; sourceTree = "<group>"; };
-		8BBB1719A9DC30C3F5D392275AA2CA65 /* Pods-novoda-constraints_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-novoda-constraints_Tests.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9582B8429FEE65B12687485C0393F562 /* novoda-constraints-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "novoda-constraints-dummy.m"; sourceTree = "<group>"; };
-		A5B37EF8D8483D67EC4C0CAB81F3194F /* Pods-novoda-constraints_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-novoda-constraints_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		AADD35BA2488A8763B1FE4219A9FF0B3 /* UIView+Sizing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Sizing.swift"; path = "novoda-constraints/Classes/UIView+Sizing.swift"; sourceTree = "<group>"; };
-		AFCEA552158CCC6578DFA4792CDFB879 /* Pods-novoda-constraints_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-novoda-constraints_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C628D6AE6F54D86574720A287B601737 /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = "novoda-constraints/Classes/Edge.swift"; sourceTree = "<group>"; };
-		CD95040675B21BC3B2D48E154E6E1540 /* Pods-novoda-constraints_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-novoda-constraints_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D0A672E0AFA5FF7AE39FD1E7B1087043 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D6FDE5CF9AC2CDC9A004802423263A3B /* Pods-novoda-constraints_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-novoda-constraints_Example-dummy.m"; sourceTree = "<group>"; };
-		DB53D7FB02028A04497B7203C992A89E /* novoda-constraints-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "novoda-constraints-prefix.pch"; sourceTree = "<group>"; };
-		DF335DB082E5E2221C243599D6F84A10 /* Pods_novoda_constraints_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_novoda_constraints_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E879DEF82D569F1F774F0CCFF710BB70 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC47B97AF2610B1E08CA18FB7DC83256 /* Pods-novoda-constraints_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-novoda-constraints_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F18F65F4DA840AA2347C728064FC5186 /* UIView+PinCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinCenter.swift"; path = "novoda-constraints/Classes/UIView+PinCenter.swift"; sourceTree = "<group>"; };
-		F30090C7402F1F13A20EA2BECDEC6BBA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		F44B9A0C2232BC18002289D6 /* UIView+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Stack.swift"; path = "novoda-constraints/Classes/UIView+Stack.swift"; sourceTree = "<group>"; };
-		F44B9A0E2232BC9F002289D6 /* UIView+Iteration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Iteration.swift"; path = "novoda-constraints/Classes/UIView+Iteration.swift"; sourceTree = "<group>"; };
-		F45361072214603900230820 /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Support.swift; path = "novoda-constraints/Classes/Support.swift"; sourceTree = "<group>"; };
+		0C07F7037F136DAD33874B2AF475BE58 /* Pods-novoda-constraints_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-novoda-constraints_Tests.modulemap"; sourceTree = "<group>"; };
+		0C90033AB7CBFAF1FB0740E57AC21E8E /* novoda-constraints-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "novoda-constraints-Info.plist"; sourceTree = "<group>"; };
+		135697F18F7E8DBA43C66B229637FC2D /* Pods-novoda-constraints_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-novoda-constraints_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		15386CA566DF882B0673209E1A4F15D2 /* Pods_novoda_constraints_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_novoda_constraints_Example.framework; path = "Pods-novoda-constraints_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A10147625200AFB882D756B10DB3665 /* UIView+Iteration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Iteration.swift"; path = "novoda-constraints/Classes/UIView+Iteration.swift"; sourceTree = "<group>"; };
+		1C0C6ED85C601A51E1936B232B8D6BA1 /* novoda-constraints-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "novoda-constraints-prefix.pch"; sourceTree = "<group>"; };
+		2908CE90BDFB56934EA452AFBE4AC405 /* Support.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Support.swift; path = "novoda-constraints/Classes/Support.swift"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		333EA9EF2B7AE63421EBE78291170A8C /* novoda-constraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "novoda-constraints-umbrella.h"; sourceTree = "<group>"; };
+		3A74D581A3B94292C944A6BACB926473 /* Pods-novoda-constraints_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-novoda-constraints_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4A20C18C354D829462BFDD8B75C93D36 /* Pods-novoda-constraints_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-novoda-constraints_Example-dummy.m"; sourceTree = "<group>"; };
+		4EF42A9D28472E29E068D5612B1E291C /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = "novoda-constraints/Classes/Edge.swift"; sourceTree = "<group>"; };
+		570F8FEAC1CF78DE94403694DC7260AA /* Pods-novoda-constraints_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-novoda-constraints_Tests-Info.plist"; sourceTree = "<group>"; };
+		589F1F4A1FD9AF285F145855BF62CA59 /* Pods-novoda-constraints_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-novoda-constraints_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5D3E238AD9DC162FF191CFD238732413 /* UIView+Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Stack.swift"; path = "novoda-constraints/Classes/UIView+Stack.swift"; sourceTree = "<group>"; };
+		5E277CD476486DEFFCD12A2828BF417E /* Pods-novoda-constraints_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-novoda-constraints_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		60F601C05976A965751F4CFA382A44BB /* Pods-novoda-constraints_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-novoda-constraints_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B83AE683DC7CB86A212728D798A24FD /* UIView+PinToSafeArea.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinToSafeArea.swift"; path = "novoda-constraints/Classes/UIView+PinToSafeArea.swift"; sourceTree = "<group>"; };
+		6CCA039829216CE653502D473D5899B2 /* UIView+Sizing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Sizing.swift"; path = "novoda-constraints/Classes/UIView+Sizing.swift"; sourceTree = "<group>"; };
+		731745697F3F18450E88D3FFF8AFCBE7 /* Pods-novoda-constraints_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-novoda-constraints_Example-umbrella.h"; sourceTree = "<group>"; };
+		888C94DAD446F3B2CCE427AC676EBE5C /* novoda-constraints.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "novoda-constraints.modulemap"; sourceTree = "<group>"; };
+		889C07DC234F18762A03AC8C8CF94224 /* novoda_constraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = novoda_constraints.framework; path = "novoda-constraints.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B32B8D5232FE7CA912263D15380773 /* Pods-novoda-constraints_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-novoda-constraints_Example.modulemap"; sourceTree = "<group>"; };
+		945D3ED7881A940ABA3054C3046E6B7B /* UIView+Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Align.swift"; path = "novoda-constraints/Classes/UIView+Align.swift"; sourceTree = "<group>"; };
+		992BB3A2A1493B98BCE5FE441FEDA057 /* Pods-novoda-constraints_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-novoda-constraints_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9B5F8A11BB73FDE46823E38BB523F7B9 /* Pods-novoda-constraints_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-novoda-constraints_Example-Info.plist"; sourceTree = "<group>"; };
+		9CA93114F4C9F1E031F96C8BC2F00AF1 /* Pods_novoda_constraints_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_novoda_constraints_Tests.framework; path = "Pods-novoda-constraints_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BBF8E9D1E0541DD76B4F85A41A9B31DD /* Pods-novoda-constraints_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-novoda-constraints_Tests-dummy.m"; sourceTree = "<group>"; };
+		BCD2AE2F03F78AA4427C761479F1C223 /* novoda-constraints.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "novoda-constraints.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C71555BF6365465E67F423695CD8A5F1 /* Pods-novoda-constraints_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-novoda-constraints_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D48D4FA2BFC002281EFD15CF262C5DDA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D6212176875F42DB7847107C79B596FE /* UIView+PinCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinCenter.swift"; path = "novoda-constraints/Classes/UIView+PinCenter.swift"; sourceTree = "<group>"; };
+		D6C48BDDA731AAC0BD0954C1761ABCDA /* novoda-constraints.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "novoda-constraints.xcconfig"; sourceTree = "<group>"; };
+		D7C7F1FA4E905AC8441B2F08CF197F74 /* UIView+Anchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Anchor.swift"; path = "novoda-constraints/Classes/UIView+Anchor.swift"; sourceTree = "<group>"; };
+		D84D10E7DFE3979D4E9074FA707FC589 /* UIView+PinToSuperView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinToSuperView.swift"; path = "novoda-constraints/Classes/UIView+PinToSuperView.swift"; sourceTree = "<group>"; };
+		DBBA1401EDDF149E1889172F23C36A26 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E9F006D436AA1B470C73A482C5B8E96B /* Pods-novoda-constraints_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-novoda-constraints_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		ED1A70D6358421543DB0EFEBBE752C1D /* Pods-novoda-constraints_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-novoda-constraints_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F026D74DF4F647EE7F51EBE6E5669E99 /* novoda-constraints-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "novoda-constraints-dummy.m"; sourceTree = "<group>"; };
+		FC586C4E5E733CA48AAB23337D393E46 /* Anchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Anchor.swift; path = "novoda-constraints/Classes/Anchor.swift"; sourceTree = "<group>"; };
+		FE91EB91A26A2B4BC877B234533332D0 /* Pods-novoda-constraints_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-novoda-constraints_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5CF51295FFC52C05C488DD4FC303CF1E /* Frameworks */ = {
+		0480476B245858B63A64964B2707A7B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C04D6E37F2CA12BC13CA25FFEBA33829 /* Foundation.framework in Frameworks */,
+				AF92DC9A98C3562DB3CC047588C9D2DF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEC07EF454EF616E5EF73B82265724C0 /* Frameworks */ = {
+		934102175CE13BD4DE647D7DDFB09C4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				987416D7EAC048EF4180CF988B058328 /* Foundation.framework in Frameworks */,
+				A826E47D55B86227A57435A7C5CFA29A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F40B32610208DE2BC083487C64BED091 /* Frameworks */ = {
+		BE968749ADEBD947E0F164A8A8911B47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E35C935923DF48D23F6390C3C3B1C5A1 /* Foundation.framework in Frameworks */,
+				825630DB16BD9840CA306D6A0E62748A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01F5C9B112CB963D89A2F249BE6891FA /* Targets Support Files */ = {
+		0F04BD2425EC098ADECD561480144B8F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E0794FD7A9F7C3AE7B9BDA08CA7AEFE /* Pods-novoda-constraints_Example */,
-				EBA65F2CE5662859A89C78A9C0F68B0E /* Pods-novoda-constraints_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		5B26EE1E6C96503F63E57770DDACD795 /* novoda-constraints */ = {
-			isa = PBXGroup;
-			children = (
-				508058F42231848A000097D2 /* Anchor.swift */,
-				C628D6AE6F54D86574720A287B601737 /* Edge.swift */,
-				F45361072214603900230820 /* Support.swift */,
-				86DE400C20DBE1D500A6746B /* UIView+Anchor.swift */,
-				5E859F8AAC4BCDBFFDF6F18FE46D749E /* UIView+PinToSuperview.swift */,
-				86DE400A20DBDCB000A6746B /* UIView+PinToSafeArea.swift */,
-				F18F65F4DA840AA2347C728064FC5186 /* UIView+PinCenter.swift */,
-				3D9ED906081CB6C911C732739FD0BA41 /* UIView+Align.swift */,
-				F44B9A0C2232BC18002289D6 /* UIView+Stack.swift */,
-				AADD35BA2488A8763B1FE4219A9FF0B3 /* UIView+Sizing.swift */,
-				F44B9A0E2232BC9F002289D6 /* UIView+Iteration.swift */,
-				85BAF977F9D23790196AA68E57459D8D /* Pod */,
-				AD21F1D2A8DF6D89EA9B3231E0975E4F /* Support Files */,
-			);
-			name = "novoda-constraints";
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		5E0794FD7A9F7C3AE7B9BDA08CA7AEFE /* Pods-novoda-constraints_Example */ = {
-			isa = PBXGroup;
-			children = (
-				481A5C48C410926FC3BAE13EF29AA48C /* Info.plist */,
-				5A8C2A98C85370EA09C3F99E003FEB1B /* Pods-novoda-constraints_Example.modulemap */,
-				3D02F52276E3A2B8578E37BB4954E11F /* Pods-novoda-constraints_Example-acknowledgements.markdown */,
-				5F24E9B6A72A5465919D512822F9FF75 /* Pods-novoda-constraints_Example-acknowledgements.plist */,
-				D6FDE5CF9AC2CDC9A004802423263A3B /* Pods-novoda-constraints_Example-dummy.m */,
-				49221B9C5D989927B864DE9C95ABDE01 /* Pods-novoda-constraints_Example-frameworks.sh */,
-				1DC88CAB47F48C5C65D9BE36DBEC1CFB /* Pods-novoda-constraints_Example-resources.sh */,
-				621C6963B5F5C66B754B84D30D82D04C /* Pods-novoda-constraints_Example-umbrella.h */,
-				340EE12739A57A02664D6924BE7DD8B0 /* Pods-novoda-constraints_Example.debug.xcconfig */,
-				AFCEA552158CCC6578DFA4792CDFB879 /* Pods-novoda-constraints_Example.release.xcconfig */,
-			);
-			name = "Pods-novoda-constraints_Example";
-			path = "Target Support Files/Pods-novoda-constraints_Example";
-			sourceTree = "<group>";
-		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		6AE53088CCBF08876EC19FDC44115DA9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				46A1784A19FA07CCB5640D9EF70E32D8 /* novoda_constraints.framework */,
-				27B8043E8F75C16A23A17F4262E53EC3 /* Pods_novoda_constraints_Example.framework */,
-				DF335DB082E5E2221C243599D6F84A10 /* Pods_novoda_constraints_Tests.framework */,
+				889C07DC234F18762A03AC8C8CF94224 /* novoda_constraints.framework */,
+				15386CA566DF882B0673209E1A4F15D2 /* Pods_novoda_constraints_Example.framework */,
+				9CA93114F4C9F1E031F96C8BC2F00AF1 /* Pods_novoda_constraints_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		3DB9367E8CF364AF769740AA7BE83333 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				D2662285C4E1F7A2C8AAE70D4EBA6394 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				6AE53088CCBF08876EC19FDC44115DA9 /* Products */,
-				01F5C9B112CB963D89A2F249BE6891FA /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		85BAF977F9D23790196AA68E57459D8D /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				F30090C7402F1F13A20EA2BECDEC6BBA /* LICENSE */,
-				66D568C9AB62FC58490A3EAB80CE8804 /* novoda-constraints.podspec */,
-				D0A672E0AFA5FF7AE39FD1E7B1087043 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		AD21F1D2A8DF6D89EA9B3231E0975E4F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E879DEF82D569F1F774F0CCFF710BB70 /* Info.plist */,
-				2F233FB8CBF5060155FEC9C137931A1E /* novoda-constraints.modulemap */,
-				2FBA941EFDA3CF29FFF387816E3D0F0E /* novoda-constraints.xcconfig */,
-				9582B8429FEE65B12687485C0393F562 /* novoda-constraints-dummy.m */,
-				DB53D7FB02028A04497B7203C992A89E /* novoda-constraints-prefix.pch */,
-				7714FF62532200BC97F4B91FE4AA95AF /* novoda-constraints-umbrella.h */,
+				888C94DAD446F3B2CCE427AC676EBE5C /* novoda-constraints.modulemap */,
+				D6C48BDDA731AAC0BD0954C1761ABCDA /* novoda-constraints.xcconfig */,
+				F026D74DF4F647EE7F51EBE6E5669E99 /* novoda-constraints-dummy.m */,
+				0C90033AB7CBFAF1FB0740E57AC21E8E /* novoda-constraints-Info.plist */,
+				1C0C6ED85C601A51E1936B232B8D6BA1 /* novoda-constraints-prefix.pch */,
+				333EA9EF2B7AE63421EBE78291170A8C /* novoda-constraints-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/novoda-constraints";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		546D76AE322F515EC7E9792177E51F1A /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				DBBA1401EDDF149E1889172F23C36A26 /* LICENSE */,
+				BCD2AE2F03F78AA4427C761479F1C223 /* novoda-constraints.podspec */,
+				D48D4FA2BFC002281EFD15CF262C5DDA /* README.md */,
 			);
-			name = Frameworks;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		D2662285C4E1F7A2C8AAE70D4EBA6394 /* Development Pods */ = {
+		56607F87EA83DF6B583C38FCA91C6AFD /* Pods-novoda-constraints_Example */ = {
 			isa = PBXGroup;
 			children = (
-				5B26EE1E6C96503F63E57770DDACD795 /* novoda-constraints */,
+				93B32B8D5232FE7CA912263D15380773 /* Pods-novoda-constraints_Example.modulemap */,
+				992BB3A2A1493B98BCE5FE441FEDA057 /* Pods-novoda-constraints_Example-acknowledgements.markdown */,
+				FE91EB91A26A2B4BC877B234533332D0 /* Pods-novoda-constraints_Example-acknowledgements.plist */,
+				4A20C18C354D829462BFDD8B75C93D36 /* Pods-novoda-constraints_Example-dummy.m */,
+				ED1A70D6358421543DB0EFEBBE752C1D /* Pods-novoda-constraints_Example-frameworks.sh */,
+				9B5F8A11BB73FDE46823E38BB523F7B9 /* Pods-novoda-constraints_Example-Info.plist */,
+				731745697F3F18450E88D3FFF8AFCBE7 /* Pods-novoda-constraints_Example-umbrella.h */,
+				3A74D581A3B94292C944A6BACB926473 /* Pods-novoda-constraints_Example.debug.xcconfig */,
+				589F1F4A1FD9AF285F145855BF62CA59 /* Pods-novoda-constraints_Example.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Pods-novoda-constraints_Example";
+			path = "Target Support Files/Pods-novoda-constraints_Example";
 			sourceTree = "<group>";
 		};
-		EBA65F2CE5662859A89C78A9C0F68B0E /* Pods-novoda-constraints_Tests */ = {
+		9038F26BFBA16308707FA9A99E356032 /* novoda-constraints */ = {
 			isa = PBXGroup;
 			children = (
-				03AC9FFF092CBDFB2A19364744263173 /* Info.plist */,
-				8BBB1719A9DC30C3F5D392275AA2CA65 /* Pods-novoda-constraints_Tests.modulemap */,
-				CD95040675B21BC3B2D48E154E6E1540 /* Pods-novoda-constraints_Tests-acknowledgements.markdown */,
-				26508AA7D5D32AB21F3CD6D9B7A14A6E /* Pods-novoda-constraints_Tests-acknowledgements.plist */,
-				440E691A3816009FE7F25B9C5DF0E157 /* Pods-novoda-constraints_Tests-dummy.m */,
-				A5B37EF8D8483D67EC4C0CAB81F3194F /* Pods-novoda-constraints_Tests-frameworks.sh */,
-				4F1DB963295E9906852B8DB052C16FA4 /* Pods-novoda-constraints_Tests-resources.sh */,
-				EC47B97AF2610B1E08CA18FB7DC83256 /* Pods-novoda-constraints_Tests-umbrella.h */,
-				2D4BC960554B04BBD38F14D39F50B2FF /* Pods-novoda-constraints_Tests.debug.xcconfig */,
-				4A8507AF1806A1C360D1FC6A54C0D44B /* Pods-novoda-constraints_Tests.release.xcconfig */,
+				FC586C4E5E733CA48AAB23337D393E46 /* Anchor.swift */,
+				4EF42A9D28472E29E068D5612B1E291C /* Edge.swift */,
+				2908CE90BDFB56934EA452AFBE4AC405 /* Support.swift */,
+				945D3ED7881A940ABA3054C3046E6B7B /* UIView+Align.swift */,
+				D7C7F1FA4E905AC8441B2F08CF197F74 /* UIView+Anchor.swift */,
+				1A10147625200AFB882D756B10DB3665 /* UIView+Iteration.swift */,
+				D6212176875F42DB7847107C79B596FE /* UIView+PinCenter.swift */,
+				6B83AE683DC7CB86A212728D798A24FD /* UIView+PinToSafeArea.swift */,
+				D84D10E7DFE3979D4E9074FA707FC589 /* UIView+PinToSuperView.swift */,
+				6CCA039829216CE653502D473D5899B2 /* UIView+Sizing.swift */,
+				5D3E238AD9DC162FF191CFD238732413 /* UIView+Stack.swift */,
+				546D76AE322F515EC7E9792177E51F1A /* Pod */,
+				3DB9367E8CF364AF769740AA7BE83333 /* Support Files */,
+			);
+			name = "novoda-constraints";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A0C4787713820166811A78FE50A070F6 /* Pods-novoda-constraints_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0C07F7037F136DAD33874B2AF475BE58 /* Pods-novoda-constraints_Tests.modulemap */,
+				5E277CD476486DEFFCD12A2828BF417E /* Pods-novoda-constraints_Tests-acknowledgements.markdown */,
+				E9F006D436AA1B470C73A482C5B8E96B /* Pods-novoda-constraints_Tests-acknowledgements.plist */,
+				BBF8E9D1E0541DD76B4F85A41A9B31DD /* Pods-novoda-constraints_Tests-dummy.m */,
+				570F8FEAC1CF78DE94403694DC7260AA /* Pods-novoda-constraints_Tests-Info.plist */,
+				C71555BF6365465E67F423695CD8A5F1 /* Pods-novoda-constraints_Tests-umbrella.h */,
+				60F601C05976A965751F4CFA382A44BB /* Pods-novoda-constraints_Tests.debug.xcconfig */,
+				135697F18F7E8DBA43C66B229637FC2D /* Pods-novoda-constraints_Tests.release.xcconfig */,
 			);
 			name = "Pods-novoda-constraints_Tests";
 			path = "Target Support Files/Pods-novoda-constraints_Tests";
 			sourceTree = "<group>";
 		};
+		B8D4C2B414C8F7A07D07111CD87D9372 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				56607F87EA83DF6B583C38FCA91C6AFD /* Pods-novoda-constraints_Example */,
+				A0C4787713820166811A78FE50A070F6 /* Pods-novoda-constraints_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BFA4EA19519968989CB43E4DD634D93F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9038F26BFBA16308707FA9A99E356032 /* novoda-constraints */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BFA4EA19519968989CB43E4DD634D93F /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0F04BD2425EC098ADECD561480144B8F /* Products */,
+				B8D4C2B414C8F7A07D07111CD87D9372 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		99206282EA9215F0FA96F0AF0332E3D0 /* Headers */ = {
+		584E5843A874AA23FD4A7E7FFBE01327 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09816DEB2A8A30E0E21762145A233C77 /* Pods-novoda-constraints_Tests-umbrella.h in Headers */,
+				C078DCFCBFF503B6AE86182CCC53A2F2 /* Pods-novoda-constraints_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B612C941266ACC00171B411CB04EA10 /* Headers */ = {
+		9F5441EEB5E9ED49E12F06A13CB028E5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98C53F05E9EEF0EF152FD5BA49D8E84D /* novoda-constraints-umbrella.h in Headers */,
+				862ED84073C5119D41703500F02375D7 /* Pods-novoda-constraints_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFD561A6A006C5BC90639A35A6CDC08A /* Headers */ = {
+		EA8F402C75687FB2EEFAC29A45769461 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F983AD5BC473B6B463D8F04738439547 /* Pods-novoda-constraints_Example-umbrella.h in Headers */,
+				B041578E92CA8BDD7D31408FCC4834F3 /* novoda-constraints-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6B0A5E31E90CAB99665B1BDC7830CD74 /* novoda-constraints */ = {
+		1343CEC269407BDCF05654F6B74EE54D /* novoda-constraints */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B944F40F920DBE24E87D3068E49ECEB8 /* Build configuration list for PBXNativeTarget "novoda-constraints" */;
+			buildConfigurationList = FEB758C26D8CE2DD64DD78EE254B4A91 /* Build configuration list for PBXNativeTarget "novoda-constraints" */;
 			buildPhases = (
-				D69372E74009B852796819738D4E4E63 /* Sources */,
-				DEC07EF454EF616E5EF73B82265724C0 /* Frameworks */,
-				9B612C941266ACC00171B411CB04EA10 /* Headers */,
+				EA8F402C75687FB2EEFAC29A45769461 /* Headers */,
+				9737744BA0770592E3D2806D5974C5E0 /* Sources */,
+				0480476B245858B63A64964B2707A7B1 /* Frameworks */,
+				1466DC6E7C70AA547974677CB07C019D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -294,129 +296,156 @@
 			);
 			name = "novoda-constraints";
 			productName = "novoda-constraints";
-			productReference = 46A1784A19FA07CCB5640D9EF70E32D8 /* novoda_constraints.framework */;
+			productReference = 889C07DC234F18762A03AC8C8CF94224 /* novoda_constraints.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7AAEFEA9DEB10BCDB2BC96EFD17194C8 /* Pods-novoda-constraints_Tests */ = {
+		7D941F5062D7120FBB6DDC19612A926C /* Pods-novoda-constraints_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8683314EE76A4BF6BEC68F45FBBD70CF /* Build configuration list for PBXNativeTarget "Pods-novoda-constraints_Tests" */;
+			buildConfigurationList = ACCBED98AE1B63EFAA83839874C80498 /* Build configuration list for PBXNativeTarget "Pods-novoda-constraints_Tests" */;
 			buildPhases = (
-				A2C901ED370A52296A77CB14D6E6CB80 /* Sources */,
-				F40B32610208DE2BC083487C64BED091 /* Frameworks */,
-				99206282EA9215F0FA96F0AF0332E3D0 /* Headers */,
+				584E5843A874AA23FD4A7E7FFBE01327 /* Headers */,
+				312249443EF56E8D19B387BF8CBCF407 /* Sources */,
+				BE968749ADEBD947E0F164A8A8911B47 /* Frameworks */,
+				3C1C2B4D2BD598F84BA8A68D501E0AC7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BEE53C79A60D394B8AA08D886EFA1A1E /* PBXTargetDependency */,
 			);
 			name = "Pods-novoda-constraints_Tests";
 			productName = "Pods-novoda-constraints_Tests";
-			productReference = DF335DB082E5E2221C243599D6F84A10 /* Pods_novoda_constraints_Tests.framework */;
+			productReference = 9CA93114F4C9F1E031F96C8BC2F00AF1 /* Pods_novoda_constraints_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		913538B365E71236BD8874E3FCA0A6C1 /* Pods-novoda-constraints_Example */ = {
+		E43E5157D511FBD5B75DA492E0817B78 /* Pods-novoda-constraints_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7A60DD8266392EE1F394AFEDE3E50EA /* Build configuration list for PBXNativeTarget "Pods-novoda-constraints_Example" */;
+			buildConfigurationList = 403CF36B66B4337871BA592396DE0BD3 /* Build configuration list for PBXNativeTarget "Pods-novoda-constraints_Example" */;
 			buildPhases = (
-				DC596DEC56F65A6056D56B5BFC8A5093 /* Sources */,
-				5CF51295FFC52C05C488DD4FC303CF1E /* Frameworks */,
-				BFD561A6A006C5BC90639A35A6CDC08A /* Headers */,
+				9F5441EEB5E9ED49E12F06A13CB028E5 /* Headers */,
+				745053F5A3A06E86F608803340BCC740 /* Sources */,
+				934102175CE13BD4DE647D7DDFB09C4C /* Frameworks */,
+				E824B3652B05AF32D7E701A4C4546E2D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				23D0E0216836DAD30DC6E046D02D654C /* PBXTargetDependency */,
+				E154903D7F81637AE8E297215F238101 /* PBXTargetDependency */,
 			);
 			name = "Pods-novoda-constraints_Example";
 			productName = "Pods-novoda-constraints_Example";
-			productReference = 27B8043E8F75C16A23A17F4262E53EC3 /* Pods_novoda_constraints_Example.framework */;
+			productReference = 15386CA566DF882B0673209E1A4F15D2 /* Pods_novoda_constraints_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1020;
-				TargetAttributes = {
-					6B0A5E31E90CAB99665B1BDC7830CD74 = {
-						LastSwiftMigration = 1020;
-					};
-				};
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 6AE53088CCBF08876EC19FDC44115DA9 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 0F04BD2425EC098ADECD561480144B8F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6B0A5E31E90CAB99665B1BDC7830CD74 /* novoda-constraints */,
-				913538B365E71236BD8874E3FCA0A6C1 /* Pods-novoda-constraints_Example */,
-				7AAEFEA9DEB10BCDB2BC96EFD17194C8 /* Pods-novoda-constraints_Tests */,
+				1343CEC269407BDCF05654F6B74EE54D /* novoda-constraints */,
+				E43E5157D511FBD5B75DA492E0817B78 /* Pods-novoda-constraints_Example */,
+				7D941F5062D7120FBB6DDC19612A926C /* Pods-novoda-constraints_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		1466DC6E7C70AA547974677CB07C019D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C1C2B4D2BD598F84BA8A68D501E0AC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E824B3652B05AF32D7E701A4C4546E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		A2C901ED370A52296A77CB14D6E6CB80 /* Sources */ = {
+		312249443EF56E8D19B387BF8CBCF407 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEC91A0C6F774C62FDBEBD5A3B02BAB1 /* Pods-novoda-constraints_Tests-dummy.m in Sources */,
+				2D61D7579DEDF04897786041799982FA /* Pods-novoda-constraints_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D69372E74009B852796819738D4E4E63 /* Sources */ = {
+		745053F5A3A06E86F608803340BCC740 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44B9A0F2232BC9F002289D6 /* UIView+Iteration.swift in Sources */,
-				80C7105EB038E27A12968D49D344D278 /* Edge.swift in Sources */,
-				F45361082214603900230820 /* Support.swift in Sources */,
-				86DE400D20DBE1D500A6746B /* UIView+Anchor.swift in Sources */,
-				86DE400B20DBDCB000A6746B /* UIView+PinToSafeArea.swift in Sources */,
-				975A419C912705B077D77A370665A260 /* novoda-constraints-dummy.m in Sources */,
-				6486E0E247000B5DECBB6D105C59BE3D /* UIView+PinToSuperview.swift in Sources */,
-				508058F52231848A000097D2 /* Anchor.swift in Sources */,
-				F44B9A0D2232BC18002289D6 /* UIView+Stack.swift in Sources */,
-				12D805C6821C691A53DED2466392BDCC /* UIView+Align.swift in Sources */,
-				467B8DD5130D7BBCA2A158A7ABAFCA51 /* UIView+PinCenter.swift in Sources */,
-				201BF69CF7CFF320CAB41BD72A3F907E /* UIView+Sizing.swift in Sources */,
+				A6D6796A5BC6A300265187A5FED54C2E /* Pods-novoda-constraints_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC596DEC56F65A6056D56B5BFC8A5093 /* Sources */ = {
+		9737744BA0770592E3D2806D5974C5E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187AC34537F4A1E62734D646558C1447 /* Pods-novoda-constraints_Example-dummy.m in Sources */,
+				188BA0D2A8CDC858D643B48F86B43DBF /* Anchor.swift in Sources */,
+				8142EA41339443B8A127C793AC29CB77 /* Edge.swift in Sources */,
+				A3E6D1C7BA55F3750575A1C6408E4259 /* novoda-constraints-dummy.m in Sources */,
+				6CC2BFF5FF553CA58634FA223AE8080A /* Support.swift in Sources */,
+				83EF302A7964578A339DAD4D80F2EBF5 /* UIView+Align.swift in Sources */,
+				A78EED2338BF46F28B207FFF4C581866 /* UIView+Anchor.swift in Sources */,
+				061E841A698076D6EDEED64F61D24626 /* UIView+Iteration.swift in Sources */,
+				502BFC8CC4307C6EC2C880D047ADF32E /* UIView+PinCenter.swift in Sources */,
+				344A31A326F8A9F9E1E9AC63266E66FD /* UIView+PinToSafeArea.swift in Sources */,
+				5A87DA51F05F0D34A5A3D4942E8EE229 /* UIView+PinToSuperView.swift in Sources */,
+				CB16A98A258E2BDC817E68EA1B670B73 /* UIView+Sizing.swift in Sources */,
+				1123C33B5C55E56FD5ADFE9086C8B356 /* UIView+Stack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		23D0E0216836DAD30DC6E046D02D654C /* PBXTargetDependency */ = {
+		BEE53C79A60D394B8AA08D886EFA1A1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-novoda-constraints_Example";
+			target = E43E5157D511FBD5B75DA492E0817B78 /* Pods-novoda-constraints_Example */;
+			targetProxy = 75942FB903ADDF8719465A6864117251 /* PBXContainerItemProxy */;
+		};
+		E154903D7F81637AE8E297215F238101 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "novoda-constraints";
-			target = 6B0A5E31E90CAB99665B1BDC7830CD74 /* novoda-constraints */;
-			targetProxy = 2AF0F74E5A4021D5DCFF6A151E6C1580 /* PBXContainerItemProxy */;
+			target = 1343CEC269407BDCF05654F6B74EE54D /* novoda-constraints */;
+			targetProxy = B4E95A182EE22D7E7B67CEC34F7117D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1CEE6EBC0EE582ABB60E85E76C23BAFB /* Release */ = {
+		195BF4A5C5E6F39884CEF73602EE7B4A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFCEA552158CCC6578DFA4792CDFB879 /* Pods-novoda-constraints_Example.release.xcconfig */;
+			baseConfigurationReference = D6C48BDDA731AAC0BD0954C1761ABCDA /* novoda-constraints.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -427,7 +456,40 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-novoda-constraints_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/novoda-constraints/novoda-constraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/novoda-constraints/novoda-constraints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/novoda-constraints/novoda-constraints.modulemap";
+				PRODUCT_MODULE_NAME = novoda_constraints;
+				PRODUCT_NAME = novoda_constraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A790A437FD3387D5485B9D0B0486170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 589F1F4A1FD9AF285F145855BF62CA59 /* Pods-novoda-constraints_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-novoda-constraints_Example/Pods-novoda-constraints_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -437,10 +499,9 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_novoda_constraints_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -448,11 +509,74 @@
 			};
 			name = Release;
 		};
-		26F954BA177A9A46FFFD4E23ED11D67A /* Release */ = {
+		5F1A184178D684863B7C60BB25F30BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F601C05976A965751F4CFA382A44BB /* Pods-novoda-constraints_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-novoda-constraints_Tests/Pods-novoda-constraints_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-novoda-constraints_Tests/Pods-novoda-constraints_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6DB6CBCE1D60AF5B70960CB0E6D64A1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6C48BDDA731AAC0BD0954C1761ABCDA /* novoda-constraints.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/novoda-constraints/novoda-constraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/novoda-constraints/novoda-constraints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/novoda-constraints/novoda-constraints.modulemap";
+				PRODUCT_MODULE_NAME = novoda_constraints;
+				PRODUCT_NAME = novoda_constraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -481,7 +605,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -500,148 +623,20 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		29B39EABC17DAF18B83F623F0B7296B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 340EE12739A57A02664D6924BE7DD8B0 /* Pods-novoda-constraints_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-novoda-constraints_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-novoda-constraints_Example/Pods-novoda-constraints_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_novoda_constraints_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2E73011911A7B67FBA7F7A9BE930DC4C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FBA941EFDA3CF29FFF387816E3D0F0E /* novoda-constraints.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/novoda-constraints/novoda-constraints-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/novoda-constraints/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/novoda-constraints/novoda-constraints.modulemap";
-				PRODUCT_NAME = novoda_constraints;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		537FE5B4196146A5A21C23BB9B80C792 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D4BC960554B04BBD38F14D39F50B2FF /* Pods-novoda-constraints_Tests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-novoda-constraints_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-novoda-constraints_Tests/Pods-novoda-constraints_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_novoda_constraints_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A88BD60FAB40E024A031FC14229AC0B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FBA941EFDA3CF29FFF387816E3D0F0E /* novoda-constraints.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/novoda-constraints/novoda-constraints-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/novoda-constraints/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/novoda-constraints/novoda-constraints.modulemap";
-				PRODUCT_NAME = novoda_constraints;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E2BF6D6731C31DE69900B7B24E6F0445 /* Debug */ = {
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -670,7 +665,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -691,20 +685,23 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		EDD390C9282D2A02FA003FE4CF935494 /* Release */ = {
+		A83D470F719B1B9EFEA7B0AEAD60265E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A8507AF1806A1C360D1FC6A54C0D44B /* Pods-novoda-constraints_Tests.release.xcconfig */;
+			baseConfigurationReference = 135697F18F7E8DBA43C66B229637FC2D /* Pods-novoda-constraints_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -714,7 +711,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-novoda-constraints_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-novoda-constraints_Tests/Pods-novoda-constraints_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -724,7 +721,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_novoda_constraints_Tests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -734,46 +731,79 @@
 			};
 			name = Release;
 		};
+		C312262ECE16D1604E9EABFD18BB707A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A74D581A3B94292C944A6BACB926473 /* Pods-novoda-constraints_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-novoda-constraints_Example/Pods-novoda-constraints_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-novoda-constraints_Example/Pods-novoda-constraints_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		403CF36B66B4337871BA592396DE0BD3 /* Build configuration list for PBXNativeTarget "Pods-novoda-constraints_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2BF6D6731C31DE69900B7B24E6F0445 /* Debug */,
-				26F954BA177A9A46FFFD4E23ED11D67A /* Release */,
+				C312262ECE16D1604E9EABFD18BB707A /* Debug */,
+				5A790A437FD3387D5485B9D0B0486170 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8683314EE76A4BF6BEC68F45FBBD70CF /* Build configuration list for PBXNativeTarget "Pods-novoda-constraints_Tests" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				537FE5B4196146A5A21C23BB9B80C792 /* Debug */,
-				EDD390C9282D2A02FA003FE4CF935494 /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B944F40F920DBE24E87D3068E49ECEB8 /* Build configuration list for PBXNativeTarget "novoda-constraints" */ = {
+		ACCBED98AE1B63EFAA83839874C80498 /* Build configuration list for PBXNativeTarget "Pods-novoda-constraints_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A88BD60FAB40E024A031FC14229AC0B6 /* Debug */,
-				2E73011911A7B67FBA7F7A9BE930DC4C /* Release */,
+				5F1A184178D684863B7C60BB25F30BF7 /* Debug */,
+				A83D470F719B1B9EFEA7B0AEAD60265E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7A60DD8266392EE1F394AFEDE3E50EA /* Build configuration list for PBXNativeTarget "Pods-novoda-constraints_Example" */ = {
+		FEB758C26D8CE2DD64DD78EE254B4A91 /* Build configuration list for PBXNativeTarget "novoda-constraints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29B39EABC17DAF18B83F623F0B7296B6 /* Debug */,
-				1CEE6EBC0EE582ABB60E85E76C23BAFB /* Release */,
+				6DB6CBCE1D60AF5B70960CB0E6D64A1A /* Debug */,
+				195BF4A5C5E6F39884CEF73602EE7B4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
