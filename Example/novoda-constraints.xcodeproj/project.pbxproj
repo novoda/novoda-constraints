@@ -168,7 +168,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				ABD965DFCFFA609BC62BB5B1 /* [CP] Embed Pods Frameworks */,
-				51E5047CE26887AA93568F34 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,8 +186,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				0682C2A5F041904949E7C54B /* [CP] Embed Pods Frameworks */,
-				58AC772255B980BE9FCC1C34 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,12 +209,10 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 87FJ4JFSM4;
 						LastSwiftMigration = 1020;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 87FJ4JFSM4;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -262,54 +257,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0682C2A5F041904949E7C54B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-novoda-constraints_Tests/Pods-novoda-constraints_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-novoda-constraints_Tests/Pods-novoda-constraints_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		51E5047CE26887AA93568F34 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-novoda-constraints_Example/Pods-novoda-constraints_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		58AC772255B980BE9FCC1C34 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-novoda-constraints_Tests/Pods-novoda-constraints_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		64651DE54A1DAC4088154D72 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,7 +281,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-novoda-constraints_Example/Pods-novoda-constraints_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-novoda-constraints_Example/Pods-novoda-constraints_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/novoda-constraints/novoda_constraints.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -343,7 +290,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-novoda-constraints_Example/Pods-novoda-constraints_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-novoda-constraints_Example/Pods-novoda-constraints_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F81F9C29F3DC7690E59C2A83 /* [CP] Check Pods Manifest.lock */ = {
@@ -516,7 +463,7 @@
 			baseConfigurationReference = 5812C92541FAF9A57784CD6E /* Pods-novoda-constraints_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 87FJ4JFSM4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "novoda-constraints/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -531,7 +478,7 @@
 			baseConfigurationReference = 3033674C0AFCD23364C82F06 /* Pods-novoda-constraints_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 87FJ4JFSM4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "novoda-constraints/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -545,7 +492,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2DFDEE205103E661568F173D /* Pods-novoda-constraints_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 87FJ4JFSM4;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -567,7 +514,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6BD7E219A581B6089FC922BD /* Pods-novoda-constraints_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 87FJ4JFSM4;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -1,16 +1,16 @@
 PODS:
-  - novoda-constraints (0.1.0)
+  - novoda-constraints (0.2.1)
 
 DEPENDENCIES:
   - novoda-constraints (from `../`)
 
 EXTERNAL SOURCES:
   novoda-constraints:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  novoda-constraints: 17d9bf47564fd0c84fa2894fb8dcf82c1e3d36b1
+  novoda-constraints: 5902826db7db9e730c76f905d309c715298c4a1b
 
 PODFILE CHECKSUM: 4b86b8804d28e9c84412f7c634f43234afe6ac1b
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.7.5
