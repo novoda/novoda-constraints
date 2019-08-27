@@ -1,5 +1,5 @@
 PODS:
-  - novoda-constraints (0.2.0)
+  - novoda-constraints (0.2.1)
 
 DEPENDENCIES:
   - novoda-constraints (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  novoda-constraints: fe713921090e579f03f4f12c2a1101c211863a6b
+  novoda-constraints: 5902826db7db9e730c76f905d309c715298c4a1b
 
 PODFILE CHECKSUM: 4b86b8804d28e9c84412f7c634f43234afe6ac1b
 
