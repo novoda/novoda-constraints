@@ -52,6 +52,16 @@ public extension UIView {
                    priority: priority,
                    relatedBy: relation)
     }
+
+    /**
+     Sets the aspect ratio of this view, setting the width to the size of the height multiplied by the ratio specified. If you set this value to 2, the width will be twice as large as the height. This is also useful for setting square views by passing an aspect ratio of 1.
+
+     - Parameter aspectRatio: The multiplier to be used in the width - height constraint
+     */
+
+    func set(aspectRatio: CGFloat) {
+        pin(.width, to: .height, of: self, constant: 0, multiplier: aspectRatio, priority: .required, relatedBy: .equal)
+    }
     
     func set(size: CGSize) {
         pin(.height, constant: size.height)
