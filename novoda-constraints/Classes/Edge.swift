@@ -26,7 +26,7 @@ internal extension NSLayoutConstraint.Axis {
         case .vertical:
             return .top
         @unknown default:
-            preconditionFailure("Trying to use unsupported axis")
+            fatalError("NovodaConstraints internal error - \(self) is an unknown axis")
         }
     }
     
@@ -37,7 +37,7 @@ internal extension NSLayoutConstraint.Axis {
         case .vertical:
             return .bottom
         @unknown default:
-            preconditionFailure("Trying to use unsupported axis")
+            fatalError("NovodaConstraints internal error - \(self) is an unknown axis")
         }
     }
 }
