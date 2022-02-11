@@ -1,3 +1,5 @@
+# 🛑 THIS REPOSITORY IS OFFICIALLY NO LONGER UNDER MAINTENANCE since 10/02/2022 🛑
+
 # novoda-constraints
 
 Novoda Constraints is a lightweight, pure-Swift library designed to assist developers in setting up and creating constraints programmatically.
